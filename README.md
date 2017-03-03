@@ -8,6 +8,7 @@ The following **required** functionality is completed:
 
 - [ ] Sign in authorization
 - [ ] Customized workout based on their fitness goals
+- [ ] Customizable goals (represented as mascot) based on a user preference
 - [ ] Select certain machines to use
 - [ ] Measure user’s workouts stats
 - [ ] View graphical history/stats about their progress
@@ -21,3 +22,4 @@ The following **optional** features are implemented:
 - [ ] Order for personal trainer
 - [ ] Instruction of using machines
 - [ ] Diet tracker and nutrition help
+
