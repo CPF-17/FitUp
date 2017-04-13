@@ -6,7 +6,7 @@ SmartFit is a fitness app that help to manage and improve user’s workout habit
 
 The following **required** functionality is completed:
 
-- [ ] Sign in authorization (FIREBASE, Google Auth) (April 19)
+- [X] Sign in authorization (FIREBASE, Google Auth) (April 19)
 - [ ] Customizable goals (represented as mascot) based on a user preference (April 19)
 - [ ] Customized workout based on their fitness goals← simplex algorithm (Start some before April 19)
 - [ ] Select certain machines to use (Life Fitness API) Life Fitness API
