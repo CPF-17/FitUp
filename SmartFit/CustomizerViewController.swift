@@ -18,7 +18,14 @@ class CustomizerViewController: UIViewController {
     @IBOutlet weak var absSlider: UISlider!
     
     var settings = Set<String>()
-
+    var chestVal = 0.0
+    var armsVal = 0.0
+    var legsVal = 0.0
+    var backVal = 0.0
+    var absVal = 0.0
+    
+    var statsDictionary =  [String: Double]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,6 +76,10 @@ class CustomizerViewController: UIViewController {
             backSlider.value = 0.0
             backSlider.isEnabled = false
         }
+    }
+
+    @IBAction func onDoneButton(_ sender: UIBarButtonItem) {
+        statsDictionary = ["chest" : chestVal, "arms" : armsVal, "legs" : legsVal, "back": backVal, "abs": absVal]
     }
 
 }

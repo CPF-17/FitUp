@@ -131,7 +131,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aQD-fW-v4t">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="e9u-rO-Km8">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="e9u-rO-Km8">
                             <connections>
                                 <action selector="onDoneButton:" destination="CNI-v3-RXN" id="94x-Wk-CMP"/>
                             </connections>
@@ -150,7 +150,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="964.76761619190415"/>
         </scene>
-        <!--Customizer View Controller-->
+        <!--Title-->
         <scene sceneID="yJU-MK-ryP">
             <objects>
                 <viewController storyboardIdentifier="CustomizerViewController" id="SVd-gs-N95" customClass="CustomizerViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,6 +221,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="QaZ-A4-9vs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="W3U-oL-bqn">
+                            <connections>
+                                <action selector="onDoneButton:" destination="SVd-gs-N95" id="pXh-Ow-JUD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="absSlider" destination="wnY-9F-vYg" id="1cU-L8-bEh"/>
