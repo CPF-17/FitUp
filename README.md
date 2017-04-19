@@ -23,42 +23,62 @@ The following **optional** features are implemented:
 - [ ] Instruction of using machines (use api to show a video tutorial) 
 - [ ] Diet tracker and nutrition help
 
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+![Screenshot](walkthrough.gif)
+
+Walkthrough recorded by QuickTime Player.
+
+## Data Schema
+
 User:
-  email (google?)
-  name
-  password
-  uid
-  PreferenceObject
-  StatsObject
-  user_masot (optional)
+- email (google?)
+- name
+- password
+- uid
+- PreferenceObject
+- StatsObject
+- user_masot (optional)
 
 -- Encapsulated as a PreferenceObject --
-Fitness Preference:
-  -- represented by integers for size --
-  chest
-  legs (quads, hamstrings, hips)
-  arms (biceps, triceps, shoulders)
-  back (lats, rhomboids)
-  abs
 
-  goal_weight (optional)
-  goal_time (optional)
+Fitness Preference:
+  
+  -- represented by integers for size --
+  
+  - chest
+  - legs (quads, hamstrings, hips)
+  - arms (biceps, triceps, shoulders)
+  - back (lats, rhomboids)
+  - abs
+
+  - goal_weight (optional)
+  - goal_time (optional)
 
 -- Encapsulated as a StatsObject --
+
 Workout Statistics
+
   -- these fields sum the stats from each MachineStatsObject --
-  DataTracker total_stats // sum of all stats from MachineStats array
-  MachineStats[] : MachineStatsObject
+
+  - DataTracker total_stats // sum of all stats from MachineStats array
+  - MachineStats[] : MachineStatsObject
 
 -- encapsulated as a MachineStatsObject --
+
 MachineStats:
+
   --each machine has a DataTracker --
-  DataTrackerObject
+
+  - DataTrackerObject
 
 -- tracks below fields --
+
 DataTracker
-  weight
-  heart_rate
-  calories_burned
-  time_duration
-  steps
+  - weight
+  - heart_rate
+  - calories_burned
+  - time_duration
+  - steps
