@@ -16,6 +16,8 @@
 		67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745BD1E9F09BF00B60013 /* LoginViewController.swift */; };
 		67C745C01E9F0C4B00B60013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */; };
 		EC7EDE8D9CD3FB887A51CED6 /* Pods_SmartFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0AF2F9350CEFEDE59993FB /* Pods_SmartFit.framework */; };
+		EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6848751EAD6D7100EAC537 /* PrefViewController.swift */; };
+		EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		67C745BD1E9F09BF00B60013 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCF3B86FD4C92D8C63B5CCC7 /* Pods-SmartFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFit/Pods-SmartFit.release.xcconfig"; sourceTree = "<group>"; };
+		EF6848751EAD6D7100EAC537 /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
+		EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsPageTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			children = (
 				67C745BD1E9F09BF00B60013 /* LoginViewController.swift */,
 				4CE0D5F41EA580D40082BCF4 /* CustomizerViewController.swift */,
+				EF6848751EAD6D7100EAC537 /* PrefViewController.swift */,
+				EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -140,7 +146,7 @@
 				TargetAttributes = {
 					67C745A71E9F092000B60013 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = NQTW4CBNTU;
+						DevelopmentTeam = R7C6985UMF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -232,8 +238,10 @@
 			files = (
 				67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */,
 				4CE0D5F51EA580D40082BCF4 /* CustomizerViewController.swift in Sources */,
+				EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */,
 				67C745AE1E9F092000B60013 /* ViewController.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
+				EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +365,7 @@
 			baseConfigurationReference = 06DF2AFBEBE37557E5ED6F9E /* Pods-SmartFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NQTW4CBNTU;
+				DEVELOPMENT_TEAM = R7C6985UMF;
 				INFOPLIST_FILE = SmartFit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cpf-17.SmartFit";
@@ -371,7 +379,7 @@
 			baseConfigurationReference = DCF3B86FD4C92D8C63B5CCC7 /* Pods-SmartFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NQTW4CBNTU;
+				DEVELOPMENT_TEAM = R7C6985UMF;
 				INFOPLIST_FILE = SmartFit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cpf-17.SmartFit";
