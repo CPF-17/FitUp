@@ -18,6 +18,7 @@
 		EC7EDE8D9CD3FB887A51CED6 /* Pods_SmartFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0AF2F9350CEFEDE59993FB /* Pods_SmartFit.framework */; };
 		EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6848751EAD6D7100EAC537 /* PrefViewController.swift */; };
 		EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */; };
+		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DCF3B86FD4C92D8C63B5CCC7 /* Pods-SmartFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFit/Pods-SmartFit.release.xcconfig"; sourceTree = "<group>"; };
 		EF6848751EAD6D7100EAC537 /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsPageTwoViewController.swift; sourceTree = "<group>"; };
+		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				4CE0D5F41EA580D40082BCF4 /* CustomizerViewController.swift */,
 				EF6848751EAD6D7100EAC537 /* PrefViewController.swift */,
 				EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */,
+				EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */,
 				67C745AE1E9F092000B60013 /* ViewController.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
+				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
 				EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
