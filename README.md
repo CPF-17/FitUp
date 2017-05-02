@@ -23,6 +23,10 @@ The following **optional** features are implemented:
 - [ ] Instruction of using machines (use api to show a video tutorial) 
 - [ ] Diet tracker and nutrition help
 
+Reference:
+
+- [Google Document](https://docs.google.com/a/ucsd.edu/document/d/1FPpNk4JD2M2FE_W07QuZLgkWmFn_23DNXM5kTEOnJ0k/edit?usp=sharing)
+
 User:
   email (google?)
   name
