@@ -22,9 +22,13 @@ class UpperBodySubmitViewController: UIViewController {
     }
     
   @IBAction func onSubmitButton(_ sender: Any) {
-    performSegue(withIdentifier: "upperWorkoutSegue", sender: nil)
+    if user.lowerBody {
+        performSegue(withIdentifier: "lowerSegue", sender: nil)
+    }
+    else {
+        performSegue(withIdentifier: "upperWorkoutSegue", sender: nil)
+    }
   }
-
     /*
     // MARK: - Navigation
 

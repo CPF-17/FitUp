@@ -26,6 +26,9 @@ class PrefViewController: UIViewController {
     }
 
   @IBAction func onSubmitButton(_ sender: UIButton) {
+    user.upperBody = upperSwitch.isOn
+    user.lowerBody = lowerSwitch.isOn
+
     if upperSwitch.isOn {
     self.performSegue(withIdentifier: "upperSegue", sender: nil)
     } else if lowerSwitch.isOn {
