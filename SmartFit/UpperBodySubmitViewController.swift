@@ -1,14 +1,14 @@
 //
-//  UpperViewController.swift
+//  UpperBodySubmitViewController.swift
 //  SmartFit
 //
-//  Created by Gerard Recinto on 4/24/17.
+//  Created by Gerard Recinto on 4/26/17.
 //  Copyright © 2017 CPF-17. All rights reserved.
 //
 
 import UIKit
 
-class UpperViewController: UIViewController {
+class UpperBodySubmitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class UpperViewController: UIViewController {
     }
     
   @IBAction func onSubmitButton(_ sender: Any) {
-    performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
+    performSegue(withIdentifier: "upperWorkoutSegue", sender: nil)
   }
 
     /*

@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Weight View Controller-->
         <scene sceneID="z1d-ed-qOq">
             <objects>
-                <viewController id="N7a-9G-qg2" sceneMemberID="viewController">
+                <viewController id="N7a-9G-qg2" customClass="WeightViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KhF-yy-6MP"/>
                         <viewControllerLayoutGuide type="bottom" id="wcp-YH-Zwo"/>
@@ -69,6 +69,7 @@
                                 <color key="backgroundColor" red="1" green="0.1967140443" blue="0.16748760839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
+                                    <action selector="onSubmitButton:" destination="N7a-9G-qg2" eventType="touchUpInside" id="4OO-7G-8cc"/>
                                     <action selector="onSubmitButton:" destination="ZeH-1c-ulQ" eventType="touchUpInside" id="bQx-CF-mhp"/>
                                 </connections>
                             </button>
@@ -77,7 +78,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Lwu-MZ-776"/>
                     <connections>
-                        <segue destination="ZeH-1c-ulQ" kind="show" id="3pp-Gu-FHc"/>
+                        <outlet property="textField" destination="NIg-kY-orT" id="flA-oo-d7R"/>
+                        <segue destination="ZeH-1c-ulQ" kind="show" identifier="prefSegue" id="3pp-Gu-FHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83l-4A-y2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,6 +213,7 @@
                                 <color key="backgroundColor" red="1" green="0.1967140443" blue="0.16748760839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
+                                    <action selector="onSubmitButton:" destination="1Mg-ch-7oQ" eventType="touchUpInside" id="T5X-ko-GhZ"/>
                                     <action selector="onSubmitButton:" destination="ZeH-1c-ulQ" eventType="touchUpInside" id="UrY-HZ-pXm"/>
                                 </connections>
                             </button>
@@ -240,7 +243,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="baN-pP-n7y" kind="show" id="5G8-F5-SFj"/>
+                        <segue destination="baN-pP-n7y" kind="show" identifier="upperSubmitSegue" id="5G8-F5-SFj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUR-H4-ioj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -328,10 +331,10 @@
             </objects>
             <point key="canvasLocation" x="3737" y="208"/>
         </scene>
-        <!--View Controller-->
+        <!--Upper Body Submit View Controller-->
         <scene sceneID="YBf-ar-QHh">
             <objects>
-                <viewController id="baN-pP-n7y" sceneMemberID="viewController">
+                <viewController id="baN-pP-n7y" customClass="UpperBodySubmitViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pCh-fX-Kdu"/>
                         <viewControllerLayoutGuide type="bottom" id="Q9Y-nJ-yuf"/>
@@ -424,13 +427,14 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="ZeH-1c-ulQ" eventType="touchUpInside" id="cLk-YP-Blo"/>
+                                    <action selector="onSubmitButton:" destination="baN-pP-n7y" eventType="touchUpInside" id="jDM-4u-VOS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="8CG-B9-blT" kind="show" id="Jac-hN-Xrm"/>
+                        <segue destination="8CG-B9-blT" kind="show" identifier="upperWorkoutSegue" id="Jac-hN-Xrm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fo-nO-9ZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -798,7 +802,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rNm-L5-3KQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ph-Fu-vba">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6ph-Fu-vba">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
