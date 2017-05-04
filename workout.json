@@ -1,0 +1,151 @@
+{: {
+
+    "chest": {
+
+        "workout": {
+            "1": {
+                "name": "barbell bench press",
+                "image": "https://www.bodybuilding.com/images/2016/july/10-best-chest-exercises-for-building-muscle-v2-1-640xh.jpg",
+                "id": "1"
+            },
+            "2": {
+                "name": "flat bench dumbell press",
+                "image": "https://www.bodybuilding.com/images/2016/july/10-best-chest-exercises-for-building-muscle-v2-2-640xh.jpg",
+                "id": "2"
+            },
+            "3": {
+                "name": "low-incline barbell bench press",
+                "image": "https://www.bodybuilding.com/images/2016/july/10-best-chest-exercises-for-building-muscle-v2-3-640xh.jpg",
+                "id": "3"
+            },
+            "4": {
+                "name": "machine decline press",
+                "image": "http://www.bodybuilding.com/exercises/exerciseImages/sequences/2141/Male/l/2141_2.jpg",
+                "id": "4"
+            },
+            "5": {
+                "name": "seated machine chest press",
+                "image": "https://www.bodybuilding.com/images/2016/july/10-best-chest-exercises-for-building-muscle-v2-4-640xh.jpg"
+                "id": "5"
+            },
+        }
+    },
+    "back": { 
+        "workout": {
+            "6": {
+                "name": "barbell deadlift",
+                "image": "https://www.bodybuilding.com/images/2016/june/10-best-muscle-building-back-exercises-v2-1-640xh.jpg",
+                "id": "6"
+            },
+            "7": {
+                "name": "wide grip pull-up",
+                "image": "https://www.bodybuilding.com/images/2016/june/10-best-muscle-building-back-exercises-v2-2-640xh.jpg",
+                "id": "7"
+            },
+            "8": {
+                "name": "Standing t-bar row",
+                "image": "https://www.bodybuilding.com/images/2016/june/10-best-muscle-building-back-exercises-v2-3-640xh.jpg",
+                "id": "8"
+            },
+            "9": {
+                "name": "wide grip seated cable row",
+                "image": "https://www.bodybuilding.com/images/2016/june/10-best-muscle-building-back-exercises-v2-4-640xh.jpg",
+                "id": "9"
+            },
+            "10": {
+                "name": "reverse-grip smith machine row",
+                "image": "https://www.bodybuilding.com/images/2016/june/10-best-muscle-building-back-exercises-v2-5-640xh.jpg"
+                "id": "10"
+            },
+        }
+    },
+    "shoulder": {
+        "workout": {
+            "11": {
+                "name": "barbell push press",
+                "image": "https://www.bodybuilding.com/images/2016/may/10-best-muscle-building-shoulder-exercies-v2-1-compressed-640xh.jpg",
+                "id": "11"
+            },
+            "12": {
+                "name": "standing military press",
+                "image": "https://i.ytimg.com/vi/0xuPGlbFGzc/maxresdefault.jpg",
+                "id": "12"
+            },
+            "13": {
+                "name": "dumbbell incline row",
+                "image": "https://www.bodybuilding.com/images/2016/may/10-best-muscle-building-shoulder-exercies-v2-2-compressed-640xh.jpg",
+                "id": "13"
+            },
+            "14": {
+                "name": "seated overhead barbell press",
+                "image": "https://www.bodybuilding.com/images/2016/may/10-best-muscle-building-shoulder-exercies-v2-3-compressed-640xh.jpg",
+                "id": "14"
+            },
+            "15": {
+                "name": "upright row",
+                "image": "https://i.ytimg.com/vi/jaAV-rD45I0/maxresdefault.jpg"
+                "id": "15"
+            },
+        }
+    }
+    "arms": {
+        "workout": {
+            "16": {
+                "name": "hammer curl",
+                "image": "http://cdn-mf1.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_hammercheatcurl.jpg?itok=5dRt1WET"
+                "id": "16"
+            },
+            "17": {
+                "name": "dip",
+                "image": "http://cdn-mf1.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_dips_0.jpg?itok=_jnkOBPG",
+                "id": "17"
+            },
+            "18": {
+                "name": "close-grip curl",
+                "image": "http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_reversecurl.jpg?itok=80M_EL9c",
+                "id": "18"
+            },
+            "19": {
+                "name": "chinup",
+                "image": "http://cdn-mf1.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_chinup.jpg?itok=_cX9zG6u",
+                "id": "19"
+            },
+            "20": {
+                "name": "suspension trainer triceps extension",
+                "image": "http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/30-best-arm-exercises-trx-tricep-extension.jpg?itok=un2vKCft",
+                "id": "20"
+            },
+        }
+    }
+
+    "shoulder": {
+        "workout": {
+            "21": {
+                "name": "ab wheel workout",
+                "image": "http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_abwheelrollout.jpg?itok=74-Y0mtQ",
+                "id": "21"
+            },
+            "22": {
+                "name": "Barbell rollout",
+                "image": "http://cdn-mf1.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_abrollout.jpg?itok=lV2Jvftv",
+                "id": "22"
+            },
+            "23": {
+                "name": "Barbell russian twist",
+                "image": "http://cdn-mf1.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_bbrussiantiwst.jpg?itok=gNQ2BNCF",
+                "id": "23"
+            },
+            "24": {
+                "name": "Swiss ball crunch",
+                "image": "http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/_main_swissballcrunch.jpg?itok=xXUd8Abm",
+                "id": "14"
+            },
+            "25": {
+                "name": "Dip/leg raise combo",
+                "image": "http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/styles/gallery_slideshow_image/public/30-best-ab-exercises-dip-leg-raise.jpg?itok=KBKNGl4a",
+                "id": "25"
+            },
+        }
+    }
+}}
+
