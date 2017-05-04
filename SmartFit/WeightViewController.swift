@@ -1,15 +1,16 @@
 //
-//  UpperViewController.swift
+//  WeightViewController.swift
 //  SmartFit
 //
-//  Created by Gerard Recinto on 4/24/17.
+//  Created by Gerard Recinto on 4/26/17.
 //  Copyright © 2017 CPF-17. All rights reserved.
 //
 
 import UIKit
 
-class UpperViewController: UIViewController {
+class WeightViewController: UIViewController {
 
+  @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +23,9 @@ class UpperViewController: UIViewController {
     }
     
   @IBAction func onSubmitButton(_ sender: Any) {
-    performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
+    if textField.hasText {
+      performSegue(withIdentifier: "prefSegue", sender: nil)
+    }
   }
 
     /*
