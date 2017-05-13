@@ -17,8 +17,10 @@
 		67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745BD1E9F09BF00B60013 /* LoginViewController.swift */; };
 		67C745C01E9F0C4B00B60013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */; };
 		EC7EDE8D9CD3FB887A51CED6 /* Pods_SmartFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0AF2F9350CEFEDE59993FB /* Pods_SmartFit.framework */; };
+		EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23819B1EC7191900A21009 /* LaunchViewController.swift */; };
 		EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21721EB18133007FA939 /* WeightViewController.swift */; };
 		EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */; };
+		EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */; };
 		EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6848751EAD6D7100EAC537 /* PrefViewController.swift */; };
 		EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */; };
 		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
@@ -39,8 +41,10 @@
 		67C745BD1E9F09BF00B60013 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCF3B86FD4C92D8C63B5CCC7 /* Pods-SmartFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFit/Pods-SmartFit.release.xcconfig"; sourceTree = "<group>"; };
+		EF23819B1EC7191900A21009 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		EF3A21721EB18133007FA939 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperBodySubmitViewController.swift; sourceTree = "<group>"; };
+		EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineUpperViewController.swift; sourceTree = "<group>"; };
 		EF6848751EAD6D7100EAC537 /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsPageTwoViewController.swift; sourceTree = "<group>"; };
 		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */,
 				EF3A21721EB18133007FA939 /* WeightViewController.swift */,
 				EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */,
+				EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */,
+				EF23819B1EC7191900A21009 /* LaunchViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -248,9 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */,
 				67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */,
 				4CE0D5F51EA580D40082BCF4 /* CustomizerViewController.swift in Sources */,
 				EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */,
+				EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */,
 				EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */,
 				67C745AE1E9F092000B60013 /* ViewController.swift in Sources */,
 				EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */,
