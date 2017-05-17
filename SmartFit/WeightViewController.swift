@@ -13,7 +13,7 @@ class WeightViewController: UIViewController {
   @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-      if let navigationBar = navigationController?.navigationBar {
+     /* if let navigationBar = navigationController?.navigationBar {
         //  navigationBar.setBackgroundImage(UIImage(named: "star"), for: .default)
         let shadow = NSShadow()
         shadow.shadowColor = UIColor.gray.withAlphaComponent(0.5)
@@ -29,11 +29,15 @@ class WeightViewController: UIViewController {
           NSForegroundColorAttributeName : UIColor(red: 0.0, green: 0.25, blue: 0.35, alpha: 0.8),
           NSShadowAttributeName : shadow
         ]
-      }
+      }*/
       
 
         // Do any additional setup after loading the view.
     }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    self.navigationItem.title = "SmartFit"
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

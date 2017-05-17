@@ -1,5 +1,5 @@
 //
-//  PowerExerciseViewController.swift
+//  PowerMonViewController.swift
 //  SmartFit
 //
 //  Created by Gerard Recinto on 5/17/17.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class PowerExerciseViewController: UIViewController {
+class PowerMonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      dismiss(animated: true, completion: nil)
         // Do any additional setup after loading the view.
     }
 
@@ -21,12 +21,6 @@ class PowerExerciseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  @IBAction func onSubmitButton(_ sender: Any) {
-    if user.lowerBody{
-      performSegue(withIdentifier: "lowerSegue", sender: nil)
-    }
-    performSegue(withIdentifier: "daySegue", sender: nil)
-  }
 
     /*
     // MARK: - Navigation

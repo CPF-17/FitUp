@@ -50,6 +50,8 @@ class UpperViewController: UIViewController {
       myVC.ohpTextField.isHidden = true;
     }
 
+    
+    
     if user.isPowerlifting == true{
       performSegue(withIdentifier: "powerSegue", sender: nil)
     } else if user.isFitness == true{

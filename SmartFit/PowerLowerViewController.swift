@@ -1,5 +1,5 @@
 //
-//  PowerExerciseViewController.swift
+//  PowerLowerViewController.swift
 //  SmartFit
 //
 //  Created by Gerard Recinto on 5/17/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PowerExerciseViewController: UIViewController {
+class PowerLowerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,14 @@ class PowerExerciseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  @IBAction func onSubmitButton(_ sender: Any) {
-    if user.lowerBody{
-      performSegue(withIdentifier: "lowerSegue", sender: nil)
+  @IBAction func onSubmitButto(_ sender: Any) {
+    if user.isPowerlifting {
+      performSegue(withIdentifier: "powerSegue", sender: nil)
+    } else if user.isBodybuilding{
+      performSegue(withIdentifier: "bodySegue", sender: nil)
+    } else if user.isFitness{
+      performSegue(withIdentifier: "fitnessSegue", sender: nil)
     }
-    performSegue(withIdentifier: "daySegue", sender: nil)
   }
 
     /*
