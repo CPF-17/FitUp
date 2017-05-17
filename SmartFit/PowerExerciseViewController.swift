@@ -1,14 +1,14 @@
 //
-//  UpperBodybuildingViewController.swift
+//  PowerExerciseViewController.swift
 //  SmartFit
 //
-//  Created by Gerard Recinto on 5/15/17.
+//  Created by Gerard Recinto on 5/17/17.
 //  Copyright © 2017 CPF-17. All rights reserved.
 //
 
 import UIKit
 
-class UpperBodybuildingViewController: UIViewController {
+class PowerExerciseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

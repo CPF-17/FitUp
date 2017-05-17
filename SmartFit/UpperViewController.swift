@@ -27,8 +27,36 @@ class UpperViewController: UIViewController {
     }
     
   @IBAction func onSubmitButton(_ sender: Any) {
-    performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
+    //performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    
+    let myVC = storyboard.instantiateViewController(withIdentifier: "UpperBodySubmitViewController") as! UpperBodySubmitViewController
+    
+    if (absSwitch.isOn == false){
+      myVC.abLabel.isHidden = true;
+      myVC.abTextField.isHidden = true;
+    }
+    if (armsSwitch.isOn == false){
+      myVC.bicepLabel.isHidden = true;
+      myVC.bicepTextField.isHidden = true;
+    }
+    if (backSwitch.isOn == false){
+      
+      myVC.rowLabel.isHidden = true;
+      myVC.rowTextField.isHidden = true;
+    }
+    if (shoulderSwitch.isOn == false){
+      myVC.ohpLabel.isHidden = true;
+      myVC.ohpTextField.isHidden = true;
+    }
 
+    if user.isPowerlifting == true{
+      performSegue(withIdentifier: "powerSegue", sender: nil)
+    } else if user.isFitness == true{
+      performSegue(withIdentifier: "fitnessSegue", sender: nil)
+    } else if user.isBodybuilding == true{
+      performSegue(withIdentifier: "bbSegue", sender: nil)
+    }
   }
   /*@IBAction func onSubmitButton(_ sender: Any) {
     /*
@@ -62,7 +90,7 @@ class UpperViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
       if segue.identifier == "upperSubmitSegue" {
@@ -77,7 +105,7 @@ class UpperViewController: UIViewController {
       }
       
       
-    }
+    }*/
  
 
 }

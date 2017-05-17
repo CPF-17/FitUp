@@ -1,14 +1,14 @@
 //
-//  UpperBodybuildingViewController.swift
+//  PowerliftUpperViewController.swift
 //  SmartFit
 //
-//  Created by Gerard Recinto on 5/15/17.
+//  Created by Gerard Recinto on 5/17/17.
 //  Copyright © 2017 CPF-17. All rights reserved.
 //
 
 import UIKit
 
-class UpperBodybuildingViewController: UIViewController {
+class PowerliftUpperViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +21,6 @@ class UpperBodybuildingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  @IBAction func onSubmitButton(_ sender: Any) {
-    performSegue(withIdentifier: "daySegue", sender: nil)
-  }
 
     /*
     // MARK: - Navigation

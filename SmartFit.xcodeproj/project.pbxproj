@@ -27,6 +27,8 @@
 		EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */; };
 		EF6AA8B01EC88523005170A6 /* CustomizedUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */; };
 		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
+		EFD68C461ECC6EA400AFF743 /* PowerliftUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C451ECC6EA400AFF743 /* PowerliftUpperViewController.swift */; };
+		EFD68C481ECC6FEF00AFF743 /* PowerExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C471ECC6FEF00AFF743 /* PowerExerciseViewController.swift */; };
 		EFE36E201ECA754900EE43FD /* UpperBodybuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */; };
 		EFE36E221ECA758800EE43FD /* UpperFitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */; };
 		EFE36E241ECA75A100EE43FD /* UpperCardioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */; };
@@ -57,6 +59,8 @@
 		EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryDaysViewController.swift; sourceTree = "<group>"; };
 		EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedUpperViewController.swift; sourceTree = "<group>"; };
 		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
+		EFD68C451ECC6EA400AFF743 /* PowerliftUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerliftUpperViewController.swift; sourceTree = "<group>"; };
+		EFD68C471ECC6FEF00AFF743 /* PowerExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerExerciseViewController.swift; sourceTree = "<group>"; };
 		EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperBodybuildingViewController.swift; sourceTree = "<group>"; };
 		EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperFitnessViewController.swift; sourceTree = "<group>"; };
 		EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperCardioViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */,
 				EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */,
 				EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */,
+				EFD68C451ECC6EA400AFF743 /* PowerliftUpperViewController.swift */,
+				EFD68C471ECC6FEF00AFF743 /* PowerExerciseViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -292,10 +298,12 @@
 				67C745AE1E9F092000B60013 /* ViewController.swift in Sources */,
 				EFE36E221ECA758800EE43FD /* UpperFitnessViewController.swift in Sources */,
 				EFE36E241ECA75A100EE43FD /* UpperCardioViewController.swift in Sources */,
+				EFD68C481ECC6FEF00AFF743 /* PowerExerciseViewController.swift in Sources */,
 				EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */,
 				EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
+				EFD68C461ECC6EA400AFF743 /* PowerliftUpperViewController.swift in Sources */,
 				67AE46CD1EB8431D00021317 /* User.swift in Sources */,
 				EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */,
 			);

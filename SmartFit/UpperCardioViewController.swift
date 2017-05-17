@@ -21,6 +21,9 @@ class UpperCardioViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+  @IBAction func onSubmitButton(_ sender: Any) {
+    performSegue(withIdentifier: "daySegue", sender: nil)
+  }
 
     /*
     // MARK: - Navigation
