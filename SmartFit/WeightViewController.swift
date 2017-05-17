@@ -13,6 +13,24 @@ class WeightViewController: UIViewController {
   @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+      if let navigationBar = navigationController?.navigationBar {
+        //  navigationBar.setBackgroundImage(UIImage(named: "star"), for: .default)
+        let shadow = NSShadow()
+        shadow.shadowColor = UIColor.gray.withAlphaComponent(0.5)
+        shadow.shadowOffset = CGSize(width: 2, height: 2)
+        // shadow.shadowOffset = CGSizeMake(2, 2);
+        shadow.shadowBlurRadius = 4;
+        navigationBar.backgroundColor = UIColor.cyan
+        let logo = UIImage(named: "Icon-Small-40")
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
+        navigationBar.titleTextAttributes = [
+          NSFontAttributeName : UIFont.boldSystemFont(ofSize: 22),
+          NSForegroundColorAttributeName : UIColor(red: 0.0, green: 0.25, blue: 0.35, alpha: 0.8),
+          NSShadowAttributeName : shadow
+        ]
+      }
+      
 
         // Do any additional setup after loading the view.
     }
@@ -21,12 +39,13 @@ class WeightViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
   @IBAction func onSubmitButton(_ sender: Any) {
     if textField.hasText {
       performSegue(withIdentifier: "prefSegue", sender: nil)
     }
   }
+    
+
 
     /*
     // MARK: - Navigation

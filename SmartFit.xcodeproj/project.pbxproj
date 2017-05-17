@@ -23,7 +23,13 @@
 		EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */; };
 		EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6848751EAD6D7100EAC537 /* PrefViewController.swift */; };
 		EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */; };
+		EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */; };
+		EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */; };
+		EF6AA8B01EC88523005170A6 /* CustomizedUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */; };
 		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
+		EFE36E201ECA754900EE43FD /* UpperBodybuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */; };
+		EFE36E221ECA758800EE43FD /* UpperFitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */; };
+		EFE36E241ECA75A100EE43FD /* UpperCardioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +53,13 @@
 		EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineUpperViewController.swift; sourceTree = "<group>"; };
 		EF6848751EAD6D7100EAC537 /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsPageTwoViewController.swift; sourceTree = "<group>"; };
+		EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTypeRoutineViewController.swift; sourceTree = "<group>"; };
+		EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryDaysViewController.swift; sourceTree = "<group>"; };
+		EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedUpperViewController.swift; sourceTree = "<group>"; };
 		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
+		EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperBodybuildingViewController.swift; sourceTree = "<group>"; };
+		EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperFitnessViewController.swift; sourceTree = "<group>"; };
+		EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperCardioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,12 @@
 				EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */,
 				EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */,
 				EF23819B1EC7191900A21009 /* LaunchViewController.swift */,
+				EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */,
+				EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */,
+				EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */,
+				EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */,
+				EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */,
+				EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -99,7 +117,7 @@
 		67C745AA1E9F092000B60013 /* SmartFit */ = {
 			isa = PBXGroup;
 			children = (
-				67AE46CC1EB8431D00021317 /* User.swift */,
+				EF5080841ECC343A0013FACF /* Model */,
 				4CE0D5F31EA580AF0082BCF4 /* ViewControllers */,
 				67C745AB1E9F092000B60013 /* AppDelegate.swift */,
 				67C745AD1E9F092000B60013 /* ViewController.swift */,
@@ -119,6 +137,14 @@
 				DCF3B86FD4C92D8C63B5CCC7 /* Pods-SmartFit.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF5080841ECC343A0013FACF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67AE46CC1EB8431D00021317 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		FF779D836A340016514A2E95 /* Frameworks */ = {
@@ -256,12 +282,18 @@
 			files = (
 				EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */,
 				67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */,
+				EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */,
+				EF6AA8B01EC88523005170A6 /* CustomizedUpperViewController.swift in Sources */,
 				4CE0D5F51EA580D40082BCF4 /* CustomizerViewController.swift in Sources */,
 				EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */,
 				EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */,
+				EFE36E201ECA754900EE43FD /* UpperBodybuildingViewController.swift in Sources */,
 				EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */,
 				67C745AE1E9F092000B60013 /* ViewController.swift in Sources */,
+				EFE36E221ECA758800EE43FD /* UpperFitnessViewController.swift in Sources */,
+				EFE36E241ECA75A100EE43FD /* UpperCardioViewController.swift in Sources */,
 				EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */,
+				EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
 				67AE46CD1EB8431D00021317 /* User.swift in Sources */,

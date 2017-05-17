@@ -53,15 +53,16 @@ class UpperBodySubmitViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
   @IBAction func onSubmitButton(_ sender: Any) {
     if user.lowerBody {
-        performSegue(withIdentifier: "lowerSegue", sender: nil)
+      performSegue(withIdentifier: "lowerSegue", sender: nil)
     }
     else {
-        performSegue(withIdentifier: "upperWorkoutSegue", sender: nil)
+      performSegue(withIdentifier: "upperWorkoutSegue", sender: nil)
     }
   }
+  
+
   
     // MARK: - Navigation
 

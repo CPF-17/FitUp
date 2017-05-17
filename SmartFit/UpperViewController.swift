@@ -27,6 +27,10 @@ class UpperViewController: UIViewController {
     }
     
   @IBAction func onSubmitButton(_ sender: Any) {
+    performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
+
+  }
+  /*@IBAction func onSubmitButton(_ sender: Any) {
     /*
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
@@ -52,7 +56,7 @@ class UpperViewController: UIViewController {
     */
     //navigationController?.pushViewController(myVC, animated: true)
     performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
-  }
+  }*/
 
   
     // MARK: - Navigation
