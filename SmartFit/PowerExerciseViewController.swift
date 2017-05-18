@@ -34,8 +34,9 @@ class PowerExerciseViewController: UIViewController, UITextFieldDelegate {
   @IBAction func onSubmitButton(_ sender: Any) {
     if user.lowerBody{
       performSegue(withIdentifier: "lowerSegue", sender: nil)
-    }
+    } else {
     performSegue(withIdentifier: "daySegue", sender: nil)
+    }
   }
 
   

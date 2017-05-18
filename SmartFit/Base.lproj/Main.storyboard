@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N7a-9G-qg2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rNm-L5-3KQ">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -299,7 +299,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="7tv-78-j7U" eventType="touchUpInside" id="2rA-Cp-6Tm"/>
-                                    <action selector="onSubmitButton:" destination="baN-pP-n7y" eventType="touchUpInside" id="c4q-pH-MQD"/>
                                     <segue destination="N73-Tp-eTS" kind="show" identifier="lowerSegue" id="HZC-vf-3OH"/>
                                 </connections>
                             </button>
@@ -359,7 +358,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter goal weights/reps:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbz-nI-QAy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter comfortable weights/reps:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbz-nI-QAy">
                                 <rect key="frame" x="26" y="125" width="378" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1807,7 +1806,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSubmitButto:" destination="N73-Tp-eTS" eventType="touchUpInside" id="0jh-Wm-piY"/>
-                                    <action selector="onSubmitButton:" destination="ZeH-1c-ulQ" eventType="touchUpInside" id="uld-eM-los"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2591,7 +2589,7 @@
         <image name="upperbody" width="1024" height="1396"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="xnK-5N-7fb"/>
         <segue reference="lgS-aa-6IY"/>
-        <segue reference="HZC-vf-3OH"/>
     </inferredMetricsTieBreakers>
 </document>
