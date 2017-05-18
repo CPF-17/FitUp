@@ -1,5 +1,5 @@
 //
-//  PowerMonViewController.swift
+//  BodybuildLegViewController.swift
 //  SmartFit
 //
 //  Created by Gerard Recinto on 5/17/17.
@@ -8,37 +8,22 @@
 
 import UIKit
 
-class PowerMonViewController: UIViewController {
+class BodybuildLegViewController: UIViewController {
 
-  @IBOutlet weak var abLabel: UILabel!
-  @IBOutlet weak var lowBarLabel: UILabel!
-  @IBOutlet weak var benchLabel: UILabel!
-  
-  @IBOutlet weak var ohpLabel: UILabel!
-  
-  @IBOutlet weak var bicepLabel: UILabel!
-  
-  @IBOutlet weak var pullupLabel: UILabel!
-  
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-      lowBarLabel.text = user.lowBar
-      benchLabel.text = user.benchPress
-      ohpLabel.text = user.ohp
-      bicepLabel.text = user.bicepCurl
-      abLabel.text = user.abMachine
-      pullupLabel.text = user.pullUps
-      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-  
-  
     
+  @IBAction func onSubmitButton(_ sender: Any) {
+    performSegue(withIdentifier: "daySegue", sender: nil)
+  }
 
     /*
     // MARK: - Navigation

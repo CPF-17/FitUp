@@ -27,18 +27,18 @@ class User: NSObject {
   var isGlutes: Bool = false;
   var isCalves: Bool = false;
   var isHips: Bool = false;
-  var benchPress: Int = 0;
+  var benchPress: String?
   var row: Int = 0;
-  var ohp: Int = 0;
-  var bicepCurl: Int = 0;
-  var abMachine: Int = 0;
+  var ohp: String?
+  var bicepCurl: String?
+  var abMachine: String?
   var sitUps: Int = 0;
   var pushUps: Int = 0;
-  var pullUps: Int = 0;
+  var pullUps: String?
   var daysToWorkOut: Int = 0;
   var squat: Int = 0;
   var deadlift: Int = 0;
-  var lowBar: Int = 0;
+  var lowBar: String?
   var frontSquat: Int = 0;
   var hiBar: Int = 0;
   var calfRaise: Int = 0;
@@ -46,7 +46,7 @@ class User: NSObject {
   var hipAb: Int = 0;
   var legExt: Int = 0;
   var legCurl: Int = 0;
-  var hipMachine: Int = 0;
+  var hipMachine: Int?
   
   //body weight can also be used as
   //a control for whether or not

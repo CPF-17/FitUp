@@ -20,6 +20,10 @@
 		EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23819B1EC7191900A21009 /* LaunchViewController.swift */; };
 		EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21721EB18133007FA939 /* WeightViewController.swift */; };
 		EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */; };
+		EF400F131ECCD56F005DC381 /* PowerLegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F121ECCD56F005DC381 /* PowerLegViewController.swift */; };
+		EF400F151ECCD64A005DC381 /* FitnessLegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F141ECCD64A005DC381 /* FitnessLegViewController.swift */; };
+		EF400F171ECCD6B3005DC381 /* BodybuildLegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F161ECCD6B3005DC381 /* BodybuildLegViewController.swift */; };
+		EF400F191ECCDEDE005DC381 /* FitnessMonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F181ECCDEDE005DC381 /* FitnessMonViewController.swift */; };
 		EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */; };
 		EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6848751EAD6D7100EAC537 /* PrefViewController.swift */; };
 		EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */; };
@@ -55,6 +59,10 @@
 		EF23819B1EC7191900A21009 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		EF3A21721EB18133007FA939 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperBodySubmitViewController.swift; sourceTree = "<group>"; };
+		EF400F121ECCD56F005DC381 /* PowerLegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerLegViewController.swift; sourceTree = "<group>"; };
+		EF400F141ECCD64A005DC381 /* FitnessLegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessLegViewController.swift; sourceTree = "<group>"; };
+		EF400F161ECCD6B3005DC381 /* BodybuildLegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodybuildLegViewController.swift; sourceTree = "<group>"; };
+		EF400F181ECCDEDE005DC381 /* FitnessMonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessMonViewController.swift; sourceTree = "<group>"; };
 		EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineUpperViewController.swift; sourceTree = "<group>"; };
 		EF6848751EAD6D7100EAC537 /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsPageTwoViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +115,10 @@
 				EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */,
 				EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */,
 				EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */,
+				EF400F121ECCD56F005DC381 /* PowerLegViewController.swift */,
+				EF400F141ECCD64A005DC381 /* FitnessLegViewController.swift */,
+				EF400F161ECCD6B3005DC381 /* BodybuildLegViewController.swift */,
+				EF400F181ECCDEDE005DC381 /* FitnessMonViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -298,6 +310,7 @@
 				EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */,
 				67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */,
 				EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */,
+				EF400F131ECCD56F005DC381 /* PowerLegViewController.swift in Sources */,
 				EF6AA8B01EC88523005170A6 /* CustomizedUpperViewController.swift in Sources */,
 				4CE0D5F51EA580D40082BCF4 /* CustomizerViewController.swift in Sources */,
 				EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */,
@@ -308,14 +321,17 @@
 				EFD68C501ECC829C00AFF743 /* PowerLowerViewController.swift in Sources */,
 				EFE36E221ECA758800EE43FD /* UpperFitnessViewController.swift in Sources */,
 				EFE36E241ECA75A100EE43FD /* UpperCardioViewController.swift in Sources */,
+				EF400F151ECCD64A005DC381 /* FitnessLegViewController.swift in Sources */,
 				EFD68C481ECC6FEF00AFF743 /* PowerExerciseViewController.swift in Sources */,
 				EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */,
 				EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */,
+				EF400F171ECCD6B3005DC381 /* BodybuildLegViewController.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
 				EFD68C461ECC6EA400AFF743 /* PowerliftUpperViewController.swift in Sources */,
 				67AE46CD1EB8431D00021317 /* User.swift in Sources */,
 				EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */,
+				EF400F191ECCDEDE005DC381 /* FitnessMonViewController.swift in Sources */,
 				EFD68C4C1ECC7B0C00AFF743 /* DaysTableViewController.swift in Sources */,
 				EFD68C4E1ECC7E5100AFF743 /* PowerMonViewController.swift in Sources */,
 			);

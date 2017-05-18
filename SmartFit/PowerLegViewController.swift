@@ -1,5 +1,5 @@
 //
-//  PowerExerciseViewController.swift
+//  PowerLegViewController.swift
 //  SmartFit
 //
 //  Created by Gerard Recinto on 5/17/17.
@@ -8,21 +8,13 @@
 
 import UIKit
 
-class PowerExerciseViewController: UIViewController, UITextFieldDelegate {
+class PowerLegViewController: UIViewController, UITextFieldDelegate {
 
-  @IBOutlet weak var benchTextField: UITextField!
-  
-  @IBOutlet weak var ohpTextField: UITextField!
-  
-  @IBOutlet weak var bicepTextField: UITextField!
-  
-  @IBOutlet weak var abTextField: UITextField!
-  @IBOutlet weak var pullupTextField: UITextField!
-  
+  @IBOutlet weak var lowBarTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-      benchTextField.delegate = self
-    
+      lowBarTextField.delegate = self
+
         // Do any additional setup after loading the view.
     }
 
@@ -32,18 +24,13 @@ class PowerExerciseViewController: UIViewController, UITextFieldDelegate {
     }
     
   @IBAction func onSubmitButton(_ sender: Any) {
-    if user.lowerBody{
-      performSegue(withIdentifier: "lowerSegue", sender: nil)
-    }
     performSegue(withIdentifier: "daySegue", sender: nil)
   }
-
-  
   /**
    * Called when 'return' key pressed. return NO to ignore.
    */
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    benchTextField.resignFirstResponder()
+    lowBarTextField.resignFirstResponder()
     return true
   }
   
@@ -56,16 +43,13 @@ class PowerExerciseViewController: UIViewController, UITextFieldDelegate {
   }
 
 
+  
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      user.benchPress = benchTextField.text!
-      user.ohp = ohpTextField.text!
-      user.bicepCurl = bicepTextField.text!
-      user.abMachine = abTextField.text!
-      user.pullUps = pullupTextField.text!
-      
+      user.lowBar = lowBarTextField.text!
+
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
