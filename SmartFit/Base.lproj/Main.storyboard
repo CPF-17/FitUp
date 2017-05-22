@@ -884,7 +884,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="6NF-Ka-fXq" kind="presentation" identifier="powerMon" id="wnq-hH-ckp"/>
+                                            <segue destination="6NF-Ka-fXq" kind="show" identifier="powerMon" id="wnq-hH-ckp"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="dSa-ZC-cWP">
@@ -1108,7 +1108,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5HY-E4-UCe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qad-Bz-mWM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="728"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utg-3h-J7T">
@@ -2589,7 +2589,7 @@
         <image name="upperbody" width="1024" height="1396"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xnK-5N-7fb"/>
-        <segue reference="lgS-aa-6IY"/>
+        <segue reference="HZC-vf-3OH"/>
+        <segue reference="1eZ-rO-j5U"/>
     </inferredMetricsTieBreakers>
 </document>

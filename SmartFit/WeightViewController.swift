@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeightViewController: UIViewController {
+class WeightViewController: UIViewController, UITextFieldDelegate {
 
   @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
@@ -49,6 +49,19 @@ class WeightViewController: UIViewController {
     }
   }
     
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+  textField.resignFirstResponder()
+    return true
+  }
+  
+  
+  /**
+   * Called when the user click on the view (outside the UITextField).
+   */
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true)
+  }
+  
 
 
     /*
