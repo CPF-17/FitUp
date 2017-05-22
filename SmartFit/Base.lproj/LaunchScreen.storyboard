@@ -21,12 +21,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone_portrait_6_-1" translatesAutoresizingMaskIntoConstraints="NO" id="TEe-Kq-7Nk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone_portrait_6_-1" translatesAutoresizingMaskIntoConstraints="NO" id="TEe-Kq-7Nk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="URz-fK-7hW"/>
+                                    <constraint firstAttribute="height" constant="736" id="zkO-ND-oqN"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TEe-Kq-7Nk" secondAttribute="trailing" id="0C3-Cs-WPD"/>
+                            <constraint firstItem="TEe-Kq-7Nk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Mwx-Rf-4Gn"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="TEe-Kq-7Nk" secondAttribute="bottom" id="ohB-GR-kui"/>
+                            <constraint firstItem="TEe-Kq-7Nk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="zg5-kJ-tRI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

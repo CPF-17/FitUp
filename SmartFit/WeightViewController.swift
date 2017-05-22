@@ -10,34 +10,39 @@ import UIKit
 
 class WeightViewController: UIViewController {
 
-  @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField: UITextField!
+    
+    
+    @IBOutlet weak var weightLabel: UILabel!
+    
+    @IBOutlet weak var submitButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-     /* if let navigationBar = navigationController?.navigationBar {
-        //  navigationBar.setBackgroundImage(UIImage(named: "star"), for: .default)
-        let shadow = NSShadow()
-        shadow.shadowColor = UIColor.gray.withAlphaComponent(0.5)
-        shadow.shadowOffset = CGSize(width: 2, height: 2)
-        // shadow.shadowOffset = CGSizeMake(2, 2);
-        shadow.shadowBlurRadius = 4;
-        navigationBar.backgroundColor = UIColor.cyan
-        let logo = UIImage(named: "Icon-Small-40")
-        let imageView = UIImageView(image: logo)
-        self.navigationItem.titleView = imageView
-        navigationBar.titleTextAttributes = [
-          NSFontAttributeName : UIFont.boldSystemFont(ofSize: 22),
-          NSForegroundColorAttributeName : UIColor(red: 0.0, green: 0.25, blue: 0.35, alpha: 0.8),
-          NSShadowAttributeName : shadow
-        ]
-      }*/
-      
-
-        // Do any additional setup after loading the view.
+        submitButton.layer.cornerRadius = 5
+        
+        textField.becomeFirstResponder()
     }
+
   
   override func viewWillAppear(_ animated: Bool) {
     self.navigationItem.title = "SmartFit"
+    
   }
+
+    override func viewDidAppear(_ animated: Bool) {
+
+            if(textField.text?.characters.count == 3){
+                view.endEditing(true)
+            }
+
+    }
+    
+
+    @IBAction func onWeightLabelTapped(_ sender: Any) {
+        self.weightLabel.layer.removeAllAnimations()
+        self.weightLabel.alpha = 0.0
+        print("registered")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -50,6 +55,9 @@ class WeightViewController: UIViewController {
   }
     
 
+    @IBAction func onScreenTapped(_ sender: Any) {
+        view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
