@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3267DD1ED2627A0000FC8F /* FadeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3267DC1ED2627A0000FC8F /* FadeExtension.swift */; };
 		4CE0D5F51EA580D40082BCF4 /* CustomizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D5F41EA580D40082BCF4 /* CustomizerViewController.swift */; };
 		67AE46CD1EB8431D00021317 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE46CC1EB8431D00021317 /* User.swift */; };
 		67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745AB1E9F092000B60013 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		06DF2AFBEBE37557E5ED6F9E /* Pods-SmartFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFit/Pods-SmartFit.debug.xcconfig"; sourceTree = "<group>"; };
 		4A0AF2F9350CEFEDE59993FB /* Pods_SmartFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3267DC1ED2627A0000FC8F /* FadeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeExtension.swift; sourceTree = "<group>"; };
 		4CE0D5F41EA580D40082BCF4 /* CustomizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizerViewController.swift; sourceTree = "<group>"; };
 		67AE46CC1EB8431D00021317 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		67C745A81E9F092000B60013 /* SmartFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3267D71ED261700000FC8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C3267DC1ED2627A0000FC8F /* FadeExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		4CE0D5F31EA580AF0082BCF4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		67C745AA1E9F092000B60013 /* SmartFit */ = {
 			isa = PBXGroup;
 			children = (
+				4C3267D71ED261700000FC8F /* Extensions */,
 				EF5080841ECC343A0013FACF /* Model */,
 				4CE0D5F31EA580AF0082BCF4 /* ViewControllers */,
 				67C745AB1E9F092000B60013 /* AppDelegate.swift */,
@@ -326,6 +337,7 @@
 				EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */,
 				EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */,
 				EF400F171ECCD6B3005DC381 /* BodybuildLegViewController.swift in Sources */,
+				4C3267DD1ED2627A0000FC8F /* FadeExtension.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
 				EFD68C461ECC6EA400AFF743 /* PowerliftUpperViewController.swift in Sources */,

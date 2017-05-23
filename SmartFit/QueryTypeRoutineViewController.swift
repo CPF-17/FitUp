@@ -13,7 +13,6 @@ class QueryTypeRoutineViewController: UIViewController, UIPickerViewDelegate, UI
   var picks = ["Powerlifting", "Bodybuilding", "Fitness", "Cardio"]
   
   
-  @IBOutlet weak var myLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
       self.pickerView.dataSource = self
@@ -35,20 +34,17 @@ class QueryTypeRoutineViewController: UIViewController, UIPickerViewDelegate, UI
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     return picks[row]
   }
-  func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    myLabel.text = picks[row]
-  }
-  
+
   func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
     var pickerLabel = view as! UILabel!
     if view == nil {  //if no label there yet
       pickerLabel = UILabel()
       //color the label's background
-      let hue = CGFloat(row)/CGFloat(picks.count)
-      pickerLabel?.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+//      let hue = CGFloat(row)/CGFloat(picks.count)
+//      pickerLabel?.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
     }
     let titleData = picks[row]
-    let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 26.0)!,NSForegroundColorAttributeName:UIColor.black])
+    let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Menlo", size: 26.0)!,NSForegroundColorAttributeName:UIColor.white])
     pickerLabel!.attributedText = myTitle
     pickerLabel!.textAlignment = .center
     return pickerLabel!
