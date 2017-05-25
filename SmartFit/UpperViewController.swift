@@ -26,7 +26,32 @@ class UpperViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  @IBAction func onSubmitButton(_ sender: Any) {
+    @IBAction func onChestButton(_ sender: UIButton) {
+        sender.alpha = chestSwitch.isOn ? 0.5: 1
+        chestSwitch.setOn(!chestSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onShoulderButton(_ sender: UIButton) {
+        sender.alpha = shoulderSwitch.isOn ? 0.5: 1
+        shoulderSwitch.setOn(!shoulderSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onArmsButton(_ sender: UIButton) {
+        sender.alpha = armsSwitch.isOn ? 0.5: 1
+        armsSwitch.setOn(!armsSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onAbsButton(_ sender: UIButton) {
+        sender.alpha = absSwitch.isOn ? 0.5: 1
+        absSwitch.setOn(!absSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onBackButton(_ sender: UIButton) {
+        sender.alpha = backSwitch.isOn ? 0.5: 1
+        backSwitch.setOn(!backSwitch.isOn, animated: false)
+    }
+    
+    @IBAction func onSubmitButton(_ sender: Any) {
     //performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
