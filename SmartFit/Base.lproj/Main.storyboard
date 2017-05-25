@@ -2493,7 +2493,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6ph-Fu-vba">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.34509803921568627" green="0.81176470588235294" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -2880,6 +2880,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xnK-5N-7fb"/>
-        <segue reference="1LW-Pk-XiC"/>
+        <segue reference="yig-Oe-pkD"/>
     </inferredMetricsTieBreakers>
 </document>

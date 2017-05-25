@@ -21,12 +21,16 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
         submitButton.layer.cornerRadius = 5
         
         textField.becomeFirstResponder()
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationItem.backBarButtonItem?.title = ""
     }
 
   
   override func viewWillAppear(_ animated: Bool) {
-    self.navigationItem.title = "SmartFit"
-    
+    //self.navigationItem.title = "SmartFit"
   }
 
     override func viewDidAppear(_ animated: Bool) {
