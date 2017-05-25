@@ -614,9 +614,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default6" translatesAutoresizingMaskIntoConstraints="NO" id="Rui-8b-fzG">
-                                <rect key="frame" x="0.0" y="38" width="414" height="698"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default6" translatesAutoresizingMaskIntoConstraints="NO" id="Rui-8b-fzG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Vyx-UK-KGM"/>
+                                    <constraint firstAttribute="height" constant="736" id="aG7-At-WHO"/>
+                                </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UY7-bQ-xYM">
                                 <rect key="frame" x="227" y="199" width="97" height="30"/>
@@ -698,7 +701,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You wanted an overall Fitness routine:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb5-H2-jS8">
                                 <rect key="frame" x="18" y="92" width="338" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -757,6 +760,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rui-8b-fzG" firstAttribute="top" secondItem="lAu-h1-1xl" secondAttribute="top" id="12P-3p-z32"/>
+                            <constraint firstItem="Q9Y-nJ-yuf" firstAttribute="top" secondItem="Rui-8b-fzG" secondAttribute="bottom" id="Esv-V6-Qgf"/>
+                            <constraint firstItem="Rui-8b-fzG" firstAttribute="leading" secondItem="lAu-h1-1xl" secondAttribute="leading" id="Gkw-yI-m3A"/>
+                            <constraint firstAttribute="trailing" secondItem="Rui-8b-fzG" secondAttribute="trailing" id="Gub-TK-l2z"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="abLabel" destination="p1g-Rw-5Gc" id="T16-o6-PZ0"/>
@@ -2879,7 +2888,7 @@
         <image name="upperbody" width="650" height="412"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xnK-5N-7fb"/>
-        <segue reference="yig-Oe-pkD"/>
+        <segue reference="1LW-Pk-XiC"/>
+        <segue reference="XeB-Mx-ofo"/>
     </inferredMetricsTieBreakers>
 </document>

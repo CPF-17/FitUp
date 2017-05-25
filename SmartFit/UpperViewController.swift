@@ -57,6 +57,11 @@ class UpperViewController: UIViewController {
     
     let myVC = storyboard.instantiateViewController(withIdentifier: "UpperBodySubmitViewController") as! UpperBodySubmitViewController
     
+        myVC.absSwitchisOn = absSwitch.isOn
+        myVC.shoulderSwitchisOn = absSwitch.isOn
+        myVC.armsSwitchisOn = armsSwitch.isOn
+        myVC.backSwitchisOn = backSwitch.isOn
+/*
     if (absSwitch.isOn == false){
       myVC.abLabel.isHidden = true;
       myVC.abTextField.isHidden = true;
@@ -74,6 +79,7 @@ class UpperViewController: UIViewController {
       myVC.ohpLabel.isHidden = true;
       myVC.ohpTextField.isHidden = true;
     }
+*/
 
     
     
