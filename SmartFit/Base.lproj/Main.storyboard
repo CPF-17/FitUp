@@ -231,12 +231,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upper Body (Choose any one)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sw-kz-AZx">
-                                <rect key="frame" x="56" y="70" width="263" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="wAj-R8-Ewn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="68.666666666666686" y="71" width="276.66666666666663" height="20"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-TY-M41">
@@ -301,12 +298,12 @@
                                     <constraint firstAttribute="width" constant="141" id="UjL-7K-QfH"/>
                                     <constraint firstAttribute="height" constant="63" id="b5J-mk-DUS"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="1Mg-ch-7oQ" eventType="touchUpInside" id="gJ2-ak-nzg"/>
-                                    <action selector="onSubmitButton:" destination="ZeH-1c-ulQ" eventType="touchUpInside" id="zBW-oM-cfe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDV-Mc-aAK">
@@ -337,6 +334,13 @@
                                     <action selector="onBackButton:" destination="1Mg-ch-7oQ" eventType="touchUpInside" id="0xI-Rn-e9m"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-dP-Zgo">
+                                <rect key="frame" x="26" y="120" width="179" height="139"/>
+                                <state key="normal" title="Button" image="chest"/>
+                                <connections>
+                                    <action selector="onChestButton:" destination="1Mg-ch-7oQ" eventType="touchUpInside" id="3eS-zI-KDn"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oj-ml-HPN">
                                 <rect key="frame" x="209" y="120" width="184" height="233"/>
                                 <constraints>
@@ -347,13 +351,41 @@
                                     <action selector="onAbsButton:" destination="1Mg-ch-7oQ" eventType="touchUpInside" id="Jof-Ye-B3D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-dP-Zgo">
-                                <rect key="frame" x="26" y="120" width="179" height="139"/>
-                                <state key="normal" title="Button" image="chest"/>
-                                <connections>
-                                    <action selector="onChestButton:" destination="1Mg-ch-7oQ" eventType="touchUpInside" id="3eS-zI-KDn"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Abs" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3I1-49-Pu8">
+                                <rect key="frame" x="341" y="333" width="52" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-4I-MeA">
+                                <rect key="frame" x="159" y="402" width="41" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shoulders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huJ-GX-MBD">
+                                <rect key="frame" x="300" y="566" width="93" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuQ-dX-Uch">
+                                <rect key="frame" x="153" y="566" width="52" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arms" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZV-gc-PMD">
+                                <rect key="frame" x="153" y="239" width="52" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -363,21 +395,19 @@
                             <constraint firstItem="xgH-QJ-L5u" firstAttribute="width" secondItem="Jyf-PG-JNq" secondAttribute="width" id="B22-bM-3Me"/>
                             <constraint firstItem="Oso-dP-Zgo" firstAttribute="top" secondItem="2Sw-kz-AZx" secondAttribute="bottom" constant="29" id="Bic-zc-Edd"/>
                             <constraint firstItem="4Oj-ml-HPN" firstAttribute="leading" secondItem="Oso-dP-Zgo" secondAttribute="trailing" constant="4" id="Bvu-zE-ouv"/>
-                            <constraint firstItem="2Sw-kz-AZx" firstAttribute="leading" secondItem="zOP-Jf-4Mx" secondAttribute="leadingMargin" constant="36" id="CmC-xo-GfU"/>
                             <constraint firstItem="Oso-dP-Zgo" firstAttribute="leading" secondItem="zOP-Jf-4Mx" secondAttribute="leadingMargin" constant="6" id="Ia9-B4-BDx"/>
                             <constraint firstItem="xgH-QJ-L5u" firstAttribute="leading" secondItem="zOP-Jf-4Mx" secondAttribute="leadingMargin" constant="6" id="Ibi-1m-szs"/>
                             <constraint firstItem="xgH-QJ-L5u" firstAttribute="height" secondItem="Jyf-PG-JNq" secondAttribute="height" id="LjQ-c5-AZ3"/>
                             <constraint firstItem="sDV-Mc-aAK" firstAttribute="top" secondItem="4Oj-ml-HPN" secondAttribute="bottom" constant="8" id="M4s-bD-O16"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Oj-ml-HPN" secondAttribute="trailing" constant="1" id="PKT-jr-SQa"/>
                             <constraint firstItem="xgH-QJ-L5u" firstAttribute="bottom" secondItem="sDV-Mc-aAK" secondAttribute="bottom" id="Tp9-R5-e76"/>
-                            <constraint firstItem="2Sw-kz-AZx" firstAttribute="top" secondItem="wI3-Eu-IbR" secondAttribute="bottom" constant="6" id="WsG-RI-5zW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Sw-kz-AZx" secondAttribute="trailing" constant="75" id="XBu-1y-Ylq"/>
                             <constraint firstItem="Jyf-PG-JNq" firstAttribute="top" secondItem="Oso-dP-Zgo" secondAttribute="bottom" constant="8" id="ew1-Bh-pw4"/>
                             <constraint firstItem="xWn-XZ-WsP" firstAttribute="centerX" secondItem="MSq-8z-I9N" secondAttribute="centerX" id="f5v-3b-3fS"/>
                             <constraint firstItem="4Oj-ml-HPN" firstAttribute="leading" secondItem="Oso-dP-Zgo" secondAttribute="trailing" constant="4" id="jlC-zU-oHG"/>
                             <constraint firstItem="xgH-QJ-L5u" firstAttribute="centerX" secondItem="Jyf-PG-JNq" secondAttribute="centerX" id="joT-Kc-D2d"/>
                             <constraint firstItem="49F-iP-gFk" firstAttribute="top" secondItem="MSq-8z-I9N" secondAttribute="bottom" constant="64" id="kwP-MN-HIh"/>
                             <constraint firstItem="4Oj-ml-HPN" firstAttribute="top" secondItem="2Sw-kz-AZx" secondAttribute="bottom" constant="29" id="nCI-Ik-iR6"/>
+                            <constraint firstItem="2Sw-kz-AZx" firstAttribute="centerX" secondItem="xWn-XZ-WsP" secondAttribute="centerX" id="pDQ-62-nw4"/>
                             <constraint firstItem="sDV-Mc-aAK" firstAttribute="width" secondItem="4Oj-ml-HPN" secondAttribute="width" id="rXi-Tc-fKx"/>
                             <constraint firstItem="sDV-Mc-aAK" firstAttribute="leading" secondItem="xgH-QJ-L5u" secondAttribute="trailing" constant="4" id="ujn-gm-zOj"/>
                             <constraint firstItem="xgH-QJ-L5u" firstAttribute="width" secondItem="Oso-dP-Zgo" secondAttribute="width" id="vel-7o-aUN"/>
