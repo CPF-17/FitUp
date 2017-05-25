@@ -20,6 +20,16 @@ class PrefViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func onUpperButton(_ sender: UIButton) {
+        sender.alpha = upperSwitch.isOn ? 0.5: 1
+        upperSwitch.setOn(!upperSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onLowerButton(_ sender: UIButton) {
+        sender.alpha = lowerSwitch.isOn ? 0.5: 1
+        lowerSwitch.setOn(!lowerSwitch.isOn, animated: false)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

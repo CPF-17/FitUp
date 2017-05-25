@@ -10,10 +10,40 @@ import UIKit
 
 class PowerLowerViewController: UIViewController {
 
+    @IBOutlet weak var legSwitch: UISwitch!
+    @IBOutlet weak var hamstringSwitch: UISwitch!
+    @IBOutlet weak var gluteusMaximusSwitch: UISwitch!
+    @IBOutlet weak var calveSwitch: UISwitch!
+    @IBOutlet weak var hipSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func onLegButton(_ sender: UIButton) {
+        sender.alpha = legSwitch.isOn ? 0.5: 1
+        legSwitch.setOn(!legSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onHamstringButton(_ sender: UIButton) {
+        sender.alpha = hamstringSwitch.isOn ? 0.5: 1
+        hamstringSwitch.setOn(!hamstringSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onGluteusButton(_ sender: UIButton) {
+        sender.alpha = gluteusMaximusSwitch.isOn ? 0.5: 1
+        gluteusMaximusSwitch.setOn(!gluteusMaximusSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onCalveButton(_ sender: UIButton) {
+        sender.alpha = calveSwitch.isOn ? 0.5: 1
+        calveSwitch.setOn(!calveSwitch.isOn, animated: false)
+    }
+
+    @IBAction func onHipButton(_ sender: UIButton) {
+        sender.alpha = hipSwitch.isOn ? 0.5: 1
+        hipSwitch.setOn(!hipSwitch.isOn, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
