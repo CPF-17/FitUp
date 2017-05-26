@@ -17,6 +17,7 @@
 		67C745B61E9F092000B60013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C745B41E9F092000B60013 /* LaunchScreen.storyboard */; };
 		67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745BD1E9F09BF00B60013 /* LoginViewController.swift */; };
 		67C745C01E9F0C4B00B60013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */; };
+		AF008EAC1ED7DB3C0077D188 /* Logged.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF008EAB1ED7DB3C0077D188 /* Logged.storyboard */; };
 		EC7EDE8D9CD3FB887A51CED6 /* Pods_SmartFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0AF2F9350CEFEDE59993FB /* Pods_SmartFit.framework */; };
 		EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23819B1EC7191900A21009 /* LaunchViewController.swift */; };
 		EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21721EB18133007FA939 /* WeightViewController.swift */; };
@@ -57,6 +58,7 @@
 		67C745B71E9F092000B60013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C745BD1E9F09BF00B60013 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF008EAB1ED7DB3C0077D188 /* Logged.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Logged.storyboard; sourceTree = "<group>"; };
 		DCF3B86FD4C92D8C63B5CCC7 /* Pods-SmartFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFit/Pods-SmartFit.release.xcconfig"; sourceTree = "<group>"; };
 		EF23819B1EC7191900A21009 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		EF3A21721EB18133007FA939 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				67C745AB1E9F092000B60013 /* AppDelegate.swift */,
 				67C745AD1E9F092000B60013 /* ViewController.swift */,
 				67C745AF1E9F092000B60013 /* Main.storyboard */,
+				AF008EAB1ED7DB3C0077D188 /* Logged.storyboard */,
 				67C745B21E9F092000B60013 /* Assets.xcassets */,
 				67C745B41E9F092000B60013 /* LaunchScreen.storyboard */,
 				67C745B71E9F092000B60013 /* Info.plist */,
@@ -260,6 +263,7 @@
 				67C745C01E9F0C4B00B60013 /* GoogleService-Info.plist in Resources */,
 				67C745B31E9F092000B60013 /* Assets.xcassets in Resources */,
 				67C745B11E9F092000B60013 /* Main.storyboard in Resources */,
+				AF008EAC1ED7DB3C0077D188 /* Logged.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
