@@ -53,14 +53,14 @@ class UpperViewController: UIViewController {
     
     @IBAction func onSubmitButton(_ sender: Any) {
     //performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    //let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
-    let myVC = storyboard.instantiateViewController(withIdentifier: "UpperBodySubmitViewController") as! UpperBodySubmitViewController
-    
-        myVC.absSwitchisOn = absSwitch.isOn
-        myVC.shoulderSwitchisOn = absSwitch.isOn
-        myVC.armsSwitchisOn = armsSwitch.isOn
-        myVC.backSwitchisOn = backSwitch.isOn
+//    let myVC = storyboard.instantiateViewController(withIdentifier: "UpperBodySubmitViewController") as! UpperBodySubmitViewController
+//    
+//        myVC.absSwitchisOn = absSwitch.isOn
+//        myVC.shoulderSwitchisOn = absSwitch.isOn
+//        myVC.armsSwitchisOn = armsSwitch.isOn
+//        myVC.backSwitchisOn = backSwitch.isOn
 /*
     if (absSwitch.isOn == false){
       myVC.abLabel.isHidden = true;
@@ -81,15 +81,22 @@ class UpperViewController: UIViewController {
     }
 */
 
+    let storyBoard : UIStoryboard = UIStoryboard(name: "WorkoutEntry", bundle:nil)
+        
+    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "WorkoutEntry") as! WorkoutEntryViewController
+        
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "WorkoutEntry") as! WorkoutEntryViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
     
     
-    if user.isPowerlifting == true{
-      performSegue(withIdentifier: "powerSegue", sender: nil)
-    } else if user.isFitness == true{
-      performSegue(withIdentifier: "fitnessSegue", sender: nil)
-    } else if user.isBodybuilding == true{
-      performSegue(withIdentifier: "bbSegue", sender: nil)
-    }
+//    if user.isPowerlifting == true{
+//      performSegue(withIdentifier: "powerSegue", sender: nil)
+//    } else if user.isFitness == true{
+//      performSegue(withIdentifier: "fitnessSegue", sender: nil)
+//    } else if user.isBodybuilding == true{
+//      performSegue(withIdentifier: "bbSegue", sender: nil)
+//    }
   }
   /*@IBAction func onSubmitButton(_ sender: Any) {
     /*
