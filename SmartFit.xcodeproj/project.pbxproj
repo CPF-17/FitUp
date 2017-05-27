@@ -12,10 +12,8 @@
 		4C3267EE1ED80C4E0000FC8F /* Entry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3267ED1ED80C4E0000FC8F /* Entry.xib */; };
 		4C3267F21ED80F890000FC8F /* WorkoutEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */; };
 		4C3267F41ED813870000FC8F /* WorkoutEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3267F31ED813870000FC8F /* WorkoutEntry.swift */; };
-		4CE0D5F51EA580D40082BCF4 /* CustomizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D5F41EA580D40082BCF4 /* CustomizerViewController.swift */; };
 		67AE46CD1EB8431D00021317 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE46CC1EB8431D00021317 /* User.swift */; };
 		67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745AB1E9F092000B60013 /* AppDelegate.swift */; };
-		67C745AE1E9F092000B60013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745AD1E9F092000B60013 /* ViewController.swift */; };
 		67C745B11E9F092000B60013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C745AF1E9F092000B60013 /* Main.storyboard */; };
 		67C745B31E9F092000B60013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C745B21E9F092000B60013 /* Assets.xcassets */; };
 		67C745B61E9F092000B60013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C745B41E9F092000B60013 /* LaunchScreen.storyboard */; };
@@ -23,28 +21,16 @@
 		67C745C01E9F0C4B00B60013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */; };
 		AF008EAC1ED7DB3C0077D188 /* Logged.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF008EAB1ED7DB3C0077D188 /* Logged.storyboard */; };
 		EC7EDE8D9CD3FB887A51CED6 /* Pods_SmartFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0AF2F9350CEFEDE59993FB /* Pods_SmartFit.framework */; };
-		EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF23819B1EC7191900A21009 /* LaunchViewController.swift */; };
 		EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21721EB18133007FA939 /* WeightViewController.swift */; };
 		EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */; };
-		EF400F131ECCD56F005DC381 /* PowerLegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F121ECCD56F005DC381 /* PowerLegViewController.swift */; };
-		EF400F151ECCD64A005DC381 /* FitnessLegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F141ECCD64A005DC381 /* FitnessLegViewController.swift */; };
-		EF400F171ECCD6B3005DC381 /* BodybuildLegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F161ECCD6B3005DC381 /* BodybuildLegViewController.swift */; };
-		EF400F191ECCDEDE005DC381 /* FitnessMonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF400F181ECCDEDE005DC381 /* FitnessMonViewController.swift */; };
 		EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */; };
 		EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6848751EAD6D7100EAC537 /* PrefViewController.swift */; };
-		EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */; };
 		EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */; };
 		EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */; };
-		EF6AA8B01EC88523005170A6 /* CustomizedUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */; };
 		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
-		EFD68C461ECC6EA400AFF743 /* PowerliftUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C451ECC6EA400AFF743 /* PowerliftUpperViewController.swift */; };
-		EFD68C481ECC6FEF00AFF743 /* PowerExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C471ECC6FEF00AFF743 /* PowerExerciseViewController.swift */; };
 		EFD68C4C1ECC7B0C00AFF743 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */; };
 		EFD68C4E1ECC7E5100AFF743 /* PowerMonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */; };
 		EFD68C501ECC829C00AFF743 /* PowerLowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */; };
-		EFE36E201ECA754900EE43FD /* UpperBodybuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */; };
-		EFE36E221ECA758800EE43FD /* UpperFitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */; };
-		EFE36E241ECA75A100EE43FD /* UpperCardioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,11 +41,9 @@
 		4C3267ED1ED80C4E0000FC8F /* Entry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Entry.xib; sourceTree = "<group>"; };
 		4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutEntryViewController.swift; sourceTree = "<group>"; };
 		4C3267F31ED813870000FC8F /* WorkoutEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutEntry.swift; sourceTree = "<group>"; };
-		4CE0D5F41EA580D40082BCF4 /* CustomizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizerViewController.swift; sourceTree = "<group>"; };
 		67AE46CC1EB8431D00021317 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		67C745A81E9F092000B60013 /* SmartFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C745AB1E9F092000B60013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67C745AD1E9F092000B60013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67C745B01E9F092000B60013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67C745B21E9F092000B60013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67C745B51E9F092000B60013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,28 +52,16 @@
 		67C745BF1E9F0C4B00B60013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF008EAB1ED7DB3C0077D188 /* Logged.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Logged.storyboard; sourceTree = "<group>"; };
 		DCF3B86FD4C92D8C63B5CCC7 /* Pods-SmartFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFit/Pods-SmartFit.release.xcconfig"; sourceTree = "<group>"; };
-		EF23819B1EC7191900A21009 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		EF3A21721EB18133007FA939 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperBodySubmitViewController.swift; sourceTree = "<group>"; };
-		EF400F121ECCD56F005DC381 /* PowerLegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerLegViewController.swift; sourceTree = "<group>"; };
-		EF400F141ECCD64A005DC381 /* FitnessLegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessLegViewController.swift; sourceTree = "<group>"; };
-		EF400F161ECCD6B3005DC381 /* BodybuildLegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodybuildLegViewController.swift; sourceTree = "<group>"; };
-		EF400F181ECCDEDE005DC381 /* FitnessMonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessMonViewController.swift; sourceTree = "<group>"; };
 		EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineUpperViewController.swift; sourceTree = "<group>"; };
 		EF6848751EAD6D7100EAC537 /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
-		EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsPageTwoViewController.swift; sourceTree = "<group>"; };
 		EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTypeRoutineViewController.swift; sourceTree = "<group>"; };
 		EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryDaysViewController.swift; sourceTree = "<group>"; };
-		EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedUpperViewController.swift; sourceTree = "<group>"; };
 		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
-		EFD68C451ECC6EA400AFF743 /* PowerliftUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerliftUpperViewController.swift; sourceTree = "<group>"; };
-		EFD68C471ECC6FEF00AFF743 /* PowerExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerExerciseViewController.swift; sourceTree = "<group>"; };
 		EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerMonViewController.swift; sourceTree = "<group>"; };
 		EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerLowerViewController.swift; sourceTree = "<group>"; };
-		EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperBodybuildingViewController.swift; sourceTree = "<group>"; };
-		EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperFitnessViewController.swift; sourceTree = "<group>"; };
-		EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperCardioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,29 +88,16 @@
 			isa = PBXGroup;
 			children = (
 				67C745BD1E9F09BF00B60013 /* LoginViewController.swift */,
-				4CE0D5F41EA580D40082BCF4 /* CustomizerViewController.swift */,
 				EF6848751EAD6D7100EAC537 /* PrefViewController.swift */,
-				EF68487B1EAD702500EAC537 /* PrefsPageTwoViewController.swift */,
 				EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */,
 				EF3A21721EB18133007FA939 /* WeightViewController.swift */,
 				EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */,
 				EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */,
-				EF23819B1EC7191900A21009 /* LaunchViewController.swift */,
 				EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */,
 				EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */,
-				EF6AA8AF1EC88523005170A6 /* CustomizedUpperViewController.swift */,
-				EFE36E1F1ECA754900EE43FD /* UpperBodybuildingViewController.swift */,
-				EFE36E211ECA758800EE43FD /* UpperFitnessViewController.swift */,
-				EFE36E231ECA75A100EE43FD /* UpperCardioViewController.swift */,
-				EFD68C451ECC6EA400AFF743 /* PowerliftUpperViewController.swift */,
-				EFD68C471ECC6FEF00AFF743 /* PowerExerciseViewController.swift */,
 				EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */,
 				EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */,
 				EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */,
-				EF400F121ECCD56F005DC381 /* PowerLegViewController.swift */,
-				EF400F141ECCD64A005DC381 /* FitnessLegViewController.swift */,
-				EF400F161ECCD6B3005DC381 /* BodybuildLegViewController.swift */,
-				EF400F181ECCDEDE005DC381 /* FitnessMonViewController.swift */,
 				4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */,
 			);
 			name = ViewControllers;
@@ -169,7 +128,6 @@
 				EF5080841ECC343A0013FACF /* Model */,
 				4CE0D5F31EA580AF0082BCF4 /* ViewControllers */,
 				67C745AB1E9F092000B60013 /* AppDelegate.swift */,
-				67C745AD1E9F092000B60013 /* ViewController.swift */,
 				67C745AF1E9F092000B60013 /* Main.storyboard */,
 				AF008EAB1ED7DB3C0077D188 /* Logged.storyboard */,
 				4C3267F31ED813870000FC8F /* WorkoutEntry.swift */,
@@ -336,34 +294,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF23819C1EC7191900A21009 /* LaunchViewController.swift in Sources */,
 				67C745BE1E9F09BF00B60013 /* LoginViewController.swift in Sources */,
 				EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */,
-				EF400F131ECCD56F005DC381 /* PowerLegViewController.swift in Sources */,
-				EF6AA8B01EC88523005170A6 /* CustomizedUpperViewController.swift in Sources */,
-				4CE0D5F51EA580D40082BCF4 /* CustomizerViewController.swift in Sources */,
-				EF68487C1EAD702500EAC537 /* PrefsPageTwoViewController.swift in Sources */,
 				EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */,
-				EFE36E201ECA754900EE43FD /* UpperBodybuildingViewController.swift in Sources */,
 				EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */,
-				67C745AE1E9F092000B60013 /* ViewController.swift in Sources */,
 				EFD68C501ECC829C00AFF743 /* PowerLowerViewController.swift in Sources */,
-				EFE36E221ECA758800EE43FD /* UpperFitnessViewController.swift in Sources */,
-				EFE36E241ECA75A100EE43FD /* UpperCardioViewController.swift in Sources */,
-				EF400F151ECCD64A005DC381 /* FitnessLegViewController.swift in Sources */,
-				EFD68C481ECC6FEF00AFF743 /* PowerExerciseViewController.swift in Sources */,
 				EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */,
 				EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */,
-				EF400F171ECCD6B3005DC381 /* BodybuildLegViewController.swift in Sources */,
 				4C3267DD1ED2627A0000FC8F /* FadeExtension.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
-				EFD68C461ECC6EA400AFF743 /* PowerliftUpperViewController.swift in Sources */,
 				4C3267F21ED80F890000FC8F /* WorkoutEntryViewController.swift in Sources */,
 				67AE46CD1EB8431D00021317 /* User.swift in Sources */,
 				EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */,
 				4C3267F41ED813870000FC8F /* WorkoutEntry.swift in Sources */,
-				EF400F191ECCDEDE005DC381 /* FitnessMonViewController.swift in Sources */,
 				EFD68C4C1ECC7B0C00AFF743 /* DaysTableViewController.swift in Sources */,
 				EFD68C4E1ECC7E5100AFF743 /* PowerMonViewController.swift in Sources */,
 			);

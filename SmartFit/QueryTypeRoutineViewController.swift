@@ -63,7 +63,7 @@ class QueryTypeRoutineViewController: UIViewController, UIPickerViewDelegate, UI
     
     if pickerView.selectedRow(inComponent: 0) == 3 {
       user.isCardio = true
-    performSegue(withIdentifier: "cardioSegue", sender: nil)
+        performSegue(withIdentifier: "cardioSegue", sender: nil)
     } else if pickerView.selectedRow(inComponent: 0) == 0{
     performSegue(withIdentifier: "notCardioSegue", sender: nil)
       user.isPowerlifting = true
