@@ -15,6 +15,7 @@
 		4C3267F61ED998E10000FC8F /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3267F51ED998E10000FC8F /* PrefViewController.swift */; };
 		4C44CFD81ED9FF200082223E /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44CFD71ED9FF200082223E /* DayCell.swift */; };
 		4C44CFDA1EDA00900082223E /* RoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44CFD91EDA00900082223E /* RoutineViewController.swift */; };
+		4C44CFDC1EDA31160082223E /* RestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44CFDB1EDA31160082223E /* RestViewController.swift */; };
 		67AE46CD1EB8431D00021317 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE46CC1EB8431D00021317 /* User.swift */; };
 		67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745AB1E9F092000B60013 /* AppDelegate.swift */; };
 		67C745B11E9F092000B60013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C745AF1E9F092000B60013 /* Main.storyboard */; };
@@ -30,7 +31,6 @@
 		EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */; };
 		EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */; };
 		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
-		EFD68C4C1ECC7B0C00AFF743 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */; };
 		EFD68C4E1ECC7E5100AFF743 /* PowerMonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */; };
 		EFD68C501ECC829C00AFF743 /* PowerLowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +46,7 @@
 		4C3267F51ED998E10000FC8F /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		4C44CFD71ED9FF200082223E /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 		4C44CFD91EDA00900082223E /* RoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineViewController.swift; sourceTree = "<group>"; };
+		4C44CFDB1EDA31160082223E /* RestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestViewController.swift; sourceTree = "<group>"; };
 		67AE46CC1EB8431D00021317 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		67C745A81E9F092000B60013 /* SmartFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C745AB1E9F092000B60013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTypeRoutineViewController.swift; sourceTree = "<group>"; };
 		EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryDaysViewController.swift; sourceTree = "<group>"; };
 		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
-		EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerMonViewController.swift; sourceTree = "<group>"; };
 		EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerLowerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,11 +99,11 @@
 				EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */,
 				EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */,
 				EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */,
-				EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */,
 				EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */,
 				EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */,
 				4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */,
 				4C44CFD91EDA00900082223E /* RoutineViewController.swift */,
+				4C44CFDB1EDA31160082223E /* RestViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -309,12 +309,12 @@
 				4C44CFDA1EDA00900082223E /* RoutineViewController.swift in Sources */,
 				4C3267DD1ED2627A0000FC8F /* FadeExtension.swift in Sources */,
 				4C44CFD81ED9FF200082223E /* DayCell.swift in Sources */,
+				4C44CFDC1EDA31160082223E /* RestViewController.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
 				4C3267F21ED80F890000FC8F /* WorkoutEntryViewController.swift in Sources */,
 				67AE46CD1EB8431D00021317 /* User.swift in Sources */,
 				4C3267F41ED813870000FC8F /* WorkoutEntry.swift in Sources */,
-				EFD68C4C1ECC7B0C00AFF743 /* DaysTableViewController.swift in Sources */,
 				EFD68C4E1ECC7E5100AFF743 /* PowerMonViewController.swift in Sources */,
 				4C3267F61ED998E10000FC8F /* PrefViewController.swift in Sources */,
 			);

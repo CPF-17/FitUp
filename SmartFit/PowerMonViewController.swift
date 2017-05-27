@@ -46,13 +46,13 @@ class PowerMonViewController: UIViewController {
 //        print("\(existing)")
 //        
         generateRoutine()
-        print(monArray)
-        print(tuesArray)
-        print(wedArray)
-        print(thurArray)
-        print(friArray)
-        print(satArray)
-        print(sunArray)
+        print("Monday: \(monArray!)")
+        print("Tuesday: \(tuesArray!)")
+        print("Wednesday: \(wedArray!)")
+        print("Thursday: \(thurArray!)")
+        print("Friday: \(friArray!)")
+        print("Saturday: \(satArray!)")
+        print("Sunday: \(sunArray!)")
         
         
         
@@ -80,7 +80,62 @@ class PowerMonViewController: UIViewController {
   
     @IBAction func onMondayTapped(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "MondayDetailedView") as! PowerMonViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "RestViewController") as! RestViewController
+        //secondViewController.data = monArray
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    @IBAction func onTuesTapped(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "RoutineViewController") as! RoutineViewController
+        secondViewController.data = tuesArray
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    
+    @IBAction func onWedTapped(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "RestViewController") as! RestViewController
+        //secondViewController.data = wedArray
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    
+    @IBAction func onThursTapped(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "RoutineViewController") as! RoutineViewController
+        secondViewController.data = thurArray
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    @IBAction func onFriTapped(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "RestViewController") as! RestViewController
+        //secondViewController.data = friArray
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    @IBAction func onSatTapped(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "RoutineViewController") as! RoutineViewController
+        secondViewController.data = satArray
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    @IBAction func onSunPressed(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "RoutineViewController") as! RoutineViewController
+        secondViewController.data = sunArray
+        
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     
@@ -107,15 +162,21 @@ class PowerMonViewController: UIViewController {
         //set bool value to true if exist
         //set array if exist
         if let lowerArray = defaults.array(forKey: "lowerBodyArray") as? [Dictionary<String, String>]{
-            haveLower = true
-            lowerIn = lowerArray
+            if(lowerArray.count != 0){
+                haveLower = true
+                lowerIn = lowerArray
+            }
+            
         }
         
         //set bool value to true if exist
         //set array if exist
         if let upperArray = defaults.array(forKey: "upperBodyArray") as? [Dictionary<String, String>]{
-            haveUpper = true
-            upperIn = upperArray
+            if(upperArray.count != 0){
+                haveUpper = true
+                upperIn = upperArray
+            }
+
         }
         
         //only wants upper and

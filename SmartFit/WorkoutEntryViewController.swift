@@ -66,7 +66,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
                 
                 featureView.name.text = feature["name"]
                 featureView.units.text = feature["units"]
-                featureView.entryField.text = "100"
+                //featureView.entryField.text = "100"
                 
                 
                 featureScrollView.addSubview(featureView)

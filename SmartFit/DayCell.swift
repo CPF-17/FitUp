@@ -9,7 +9,12 @@
 import UIKit
 
 class DayCell: UITableViewCell {
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var magnitudeLabel: UILabel!
+    @IBOutlet weak var unitsLabel: UILabel!
+    
+    @IBOutlet weak var typeImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
