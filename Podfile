@@ -6,9 +6,10 @@ target 'SmartFit' do
   use_frameworks!
 
   
+  pod "youtube-ios-player-helper", "~> 0.1.4"
   # Pods for SmartFit
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
-
+ 
 end

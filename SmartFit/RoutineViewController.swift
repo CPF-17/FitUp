@@ -44,6 +44,7 @@ class RoutineViewController: UIViewController, UITableViewDataSource, UITableVie
         
         cell.nameLabel.text = dict?["name"]
         cell.unitsLabel.text = dict?["units"]
+        
         cell.magnitudeLabel.text = dict?["mag"]
         
         
