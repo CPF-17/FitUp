@@ -12,24 +12,21 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
     //empty array for resetting
     let emptyArray = [Dictionary<String, String>]()
     var previousView: String!
+    
     @IBOutlet weak var featureScrollView: UIScrollView!
     
     
     @IBOutlet weak var featurePageControl: UIPageControl!
-//    //for powerlifting
-//    let entry1 = ["name": "Bench Press","units": "lbs"]
-//    let entry2 = ["name": "Overhead Press", "units": "lbs"]
-//    let entry3 = ["name": "Bicep Curls", "units": "lbs"]
-//    let entry4 = ["name": "Ab machine", "units": "reps"]
-//    let entry5 = ["name": "Pull-ups", "units": "reps"]
+
     
     var dataEntryArray = [Int]()
     
     var featureArray = [Dictionary<String,String>]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //featureArray = [entry1, entry2, entry3, entry4, entry5]
         dataEntryArray = [Int] (repeating: 0, count: featureArray.count)
         
         featurePageControl.numberOfPages = featureArray.count
@@ -133,6 +130,11 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
             let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
         
+        }
+        
+        if(previousView == "Cardio"){
+            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
         }
         
         

@@ -10,10 +10,15 @@ import UIKit
 
 class QueryDaysViewController: UIViewController {
   
-  @IBOutlet weak var myTextField: UITextField!
+    @IBOutlet weak var myTextField: UITextField!
+  
+    @IBOutlet weak var submitButton: UIButton!
   var days: String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        submitButton.layer.cornerRadius = 5
+        
+        myTextField.becomeFirstResponder()
         days = myTextField.text
         // Do any additional setup after loading the view.
     }
@@ -25,7 +30,12 @@ class QueryDaysViewController: UIViewController {
     
   @IBAction func onSubmitButton(_ sender: Any) {
     if myTextField.hasText {
-    performSegue(withIdentifier: "querySegue", sender: nil)
+    //performSegue(withIdentifier: "querySegue", sender: nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! PowerMonViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
     }
   }
 

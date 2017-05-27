@@ -12,6 +12,7 @@
 		4C3267EE1ED80C4E0000FC8F /* Entry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3267ED1ED80C4E0000FC8F /* Entry.xib */; };
 		4C3267F21ED80F890000FC8F /* WorkoutEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */; };
 		4C3267F41ED813870000FC8F /* WorkoutEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3267F31ED813870000FC8F /* WorkoutEntry.swift */; };
+		4C3267F61ED998E10000FC8F /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3267F51ED998E10000FC8F /* PrefViewController.swift */; };
 		67AE46CD1EB8431D00021317 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE46CC1EB8431D00021317 /* User.swift */; };
 		67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C745AB1E9F092000B60013 /* AppDelegate.swift */; };
 		67C745B11E9F092000B60013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C745AF1E9F092000B60013 /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21721EB18133007FA939 /* WeightViewController.swift */; };
 		EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */; };
 		EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */; };
-		EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6848751EAD6D7100EAC537 /* PrefViewController.swift */; };
 		EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */; };
 		EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */; };
 		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
@@ -41,6 +41,7 @@
 		4C3267ED1ED80C4E0000FC8F /* Entry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Entry.xib; sourceTree = "<group>"; };
 		4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutEntryViewController.swift; sourceTree = "<group>"; };
 		4C3267F31ED813870000FC8F /* WorkoutEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutEntry.swift; sourceTree = "<group>"; };
+		4C3267F51ED998E10000FC8F /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrefViewController.swift; path = ../../../.Trash/PrefViewController.swift; sourceTree = "<group>"; };
 		67AE46CC1EB8431D00021317 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		67C745A81E9F092000B60013 /* SmartFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C745AB1E9F092000B60013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		EF3A21721EB18133007FA939 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperBodySubmitViewController.swift; sourceTree = "<group>"; };
 		EF42D6BD1EC409430026C9AB /* RoutineUpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineUpperViewController.swift; sourceTree = "<group>"; };
-		EF6848751EAD6D7100EAC537 /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTypeRoutineViewController.swift; sourceTree = "<group>"; };
 		EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryDaysViewController.swift; sourceTree = "<group>"; };
 		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		4CE0D5F31EA580AF0082BCF4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C3267F51ED998E10000FC8F /* PrefViewController.swift */,
 				67C745BD1E9F09BF00B60013 /* LoginViewController.swift */,
-				EF6848751EAD6D7100EAC537 /* PrefViewController.swift */,
 				EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */,
 				EF3A21721EB18133007FA939 /* WeightViewController.swift */,
 				EF3A21781EB19C3C007FA939 /* UpperBodySubmitViewController.swift */,
@@ -306,10 +306,10 @@
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
 				4C3267F21ED80F890000FC8F /* WorkoutEntryViewController.swift in Sources */,
 				67AE46CD1EB8431D00021317 /* User.swift in Sources */,
-				EF6848761EAD6D7100EAC537 /* PrefViewController.swift in Sources */,
 				4C3267F41ED813870000FC8F /* WorkoutEntry.swift in Sources */,
 				EFD68C4C1ECC7B0C00AFF743 /* DaysTableViewController.swift in Sources */,
 				EFD68C4E1ECC7E5100AFF743 /* PowerMonViewController.swift in Sources */,
+				4C3267F61ED998E10000FC8F /* PrefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

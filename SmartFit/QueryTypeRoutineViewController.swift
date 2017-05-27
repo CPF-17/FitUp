@@ -59,11 +59,24 @@ class QueryTypeRoutineViewController: UIViewController, UIPickerViewDelegate, UI
   
   
   @IBAction func onSubmitButton(_ sender: Any) {
-  //cardio
+
     
+    var workoutsArray = [Dictionary<String,String>]()
     if pickerView.selectedRow(inComponent: 0) == 3 {
       user.isCardio = true
-        performSegue(withIdentifier: "cardioSegue", sender: nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "WorkoutEntry", bundle:nil)
+        
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "WorkoutEntry") as! WorkoutEntryViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+        workoutsArray.append(["name": "Jog", "units": "min"])
+        workoutsArray.append(["name": "Body Squats", "units": "reps"])
+        workoutsArray.append(["name": "Bulgarian Split Squat", "units": "lbs"])
+        workoutsArray.append(["name": "Jump Rope", "units": "min"])
+        secondViewController.featureArray = workoutsArray
+        secondViewController.previousView = "Cardio"
+        
+        
     } else if pickerView.selectedRow(inComponent: 0) == 0{
     performSegue(withIdentifier: "notCardioSegue", sender: nil)
       user.isPowerlifting = true

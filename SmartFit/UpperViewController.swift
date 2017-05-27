@@ -22,8 +22,8 @@ class UpperViewController: UIViewController {
   @IBOutlet weak var chestSwitch: UISwitch!
     static var comingBack = false;
     
-    var workoutsArray = [Dictionary<String, String>] ()
-    let emptyArray = [Dictionary<String, String>]()
+    var workoutsArray = [Dictionary<String, String, String>] ()
+    let emptyArray = [Dictionary<String, String, String>]()
     
     
     
@@ -69,37 +69,10 @@ class UpperViewController: UIViewController {
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
-    //performSegue(withIdentifier: "upperSubmitSegue", sender: nil)
-    //let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
-//    let myVC = storyboard.instantiateViewController(withIdentifier: "UpperBodySubmitViewController") as! UpperBodySubmitViewController
-//    
-//        myVC.absSwitchisOn = absSwitch.isOn
-//        myVC.shoulderSwitchisOn = absSwitch.isOn
-//        myVC.armsSwitchisOn = armsSwitch.isOn
-//        myVC.backSwitchisOn = backSwitch.isOn
-/*
-    if (absSwitch.isOn == false){
-      myVC.abLabel.isHidden = true;
-      myVC.abTextField.isHidden = true;
-    }
-    if (armsSwitch.isOn == false){
-      myVC.bicepLabel.isHidden = true;
-      myVC.bicepTextField.isHidden = true;
-    }
-    if (backSwitch.isOn == false){
-      
-      myVC.rowLabel.isHidden = true;
-      myVC.rowTextField.isHidden = true;
-    }
-    if (shoulderSwitch.isOn == false){
-      myVC.ohpLabel.isHidden = true;
-      myVC.ohpTextField.isHidden = true;
-    }
-*/
     if(armsSwitch.isOn == true){
-        workoutsArray.append(["name": "Bicep Curls", "units": "lbs"])
-        workoutsArray.append(["name": "Push ups", "units": "reps"])
+        workoutsArray.append(["name": "Bicep Curls","mag": "", "units": "lbs"])
+        workoutsArray.append(["name": "Push ups", "mag": "", "units": "reps"])
             
     }
     if(absSwitch.isOn == true){

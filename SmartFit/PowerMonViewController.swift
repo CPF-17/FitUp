@@ -23,12 +23,12 @@ class PowerMonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-      lowBarLabel.text = user.lowBar
-      benchLabel.text = user.benchPress
-      ohpLabel.text = user.ohp
-      bicepLabel.text = user.bicepCurl
-      abLabel.text = user.abMachine
-      pullupLabel.text = user.pullUps
+//      lowBarLabel.text = user.lowBar
+//      benchLabel.text = user.benchPress
+//      ohpLabel.text = user.ohp
+//      bicepLabel.text = user.bicepCurl
+//      abLabel.text = user.abMachine
+//      pullupLabel.text = user.pullUps
       
     }
 
