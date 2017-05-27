@@ -8,15 +8,32 @@
 
 import UIKit
 
+
+
 class UpperViewController: UIViewController {
+    struct comingBackStruct{
+        static var comingBack = false;
+    }
   @IBOutlet weak var absSwitch: UISwitch!
  
   @IBOutlet weak var armsSwitch: UISwitch!
   @IBOutlet weak var backSwitch: UISwitch!
   @IBOutlet weak var shoulderSwitch: UISwitch!
   @IBOutlet weak var chestSwitch: UISwitch!
+    static var comingBack = false;
+    
+    var workoutsArray = [Dictionary<String, String>] ()
+    let emptyArray = [Dictionary<String, String>]()
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -80,11 +97,38 @@ class UpperViewController: UIViewController {
       myVC.ohpTextField.isHidden = true;
     }
 */
+    if(armsSwitch.isOn == true){
+        workoutsArray.append(["name": "Bicep Curls", "units": "reps"])
+        workoutsArray.append(["name": "Push ups", "units": "reps"])
+            
+    }
+    if(absSwitch.isOn == true){
+        workoutsArray.append(["name": "Ab Machine", "units": "reps"])
+        workoutsArray.append(["name": "Sit Ups", "units": "reps"])
+    }
+        
+    if(shoulderSwitch.isOn == true){
+        workoutsArray.append(["name": "Overhead Press", "units": "lbs"])
+    }
+        
+    if(user.isPowerlifting == true){
+        workoutsArray.append(["name": "Bench Press", "units": "lbs"])
+    }
+        
+    if(user.isBodybuilding == true){
+        workoutsArray.append(["name": "Bentover Rows", "units": "lbs"])
+    }
+        
+    
 
     let storyBoard : UIStoryboard = UIStoryboard(name: "WorkoutEntry", bundle:nil)
         
     let secondViewController = storyBoard.instantiateViewController(withIdentifier: "WorkoutEntry") as! WorkoutEntryViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
+    
+    secondViewController.featureArray = workoutsArray
+    workoutsArray = emptyArray
+    
         
     
     

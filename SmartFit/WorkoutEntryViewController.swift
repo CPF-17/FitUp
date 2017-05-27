@@ -9,24 +9,27 @@
 import UIKit
 
 class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
-    
+    //empty array for resetting
+    let emptyArray = [Dictionary<String, String>]()
     @IBOutlet weak var featureScrollView: UIScrollView!
     
-    @IBOutlet weak var featurePageControl: UIPageControl!
-    //for powerlifting
-    let entry1 = ["name": "Bench Press","units": "lbs"]
-    let entry2 = ["name": "Overhead Press", "units": "lbs"]
-    let entry3 = ["name": "Bicep Curls", "units": "lbs"]
-    let entry4 = ["name": "Ab machine", "units": "reps"]
-    let entry5 = ["name": "Pull-ups", "units": "reps"]
     
-    var dataEntryArray = [Int](repeating: 0, count: 5)
+    @IBOutlet weak var featurePageControl: UIPageControl!
+//    //for powerlifting
+//    let entry1 = ["name": "Bench Press","units": "lbs"]
+//    let entry2 = ["name": "Overhead Press", "units": "lbs"]
+//    let entry3 = ["name": "Bicep Curls", "units": "lbs"]
+//    let entry4 = ["name": "Ab machine", "units": "reps"]
+//    let entry5 = ["name": "Pull-ups", "units": "reps"]
+    
+    var dataEntryArray = [Int]()
     
     var featureArray = [Dictionary<String,String>]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        featureArray = [entry1, entry2, entry3, entry4, entry5]
+        //featureArray = [entry1, entry2, entry3, entry4, entry5]
+        dataEntryArray = [Int] (repeating: 0, count: featureArray.count)
         
         featurePageControl.numberOfPages = featureArray.count
         featurePageControl.isEnabled = true
@@ -52,6 +55,24 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
 
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("disappearing")
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController){
+            print("view is dismissed")
+            UpperViewController.comingBackStruct.comingBack = true
+            //featureArray = emptyArray
+        }
+        
+//        if(self.isBeingDismissed == true){
+//            
+//        }
+        
+        print("feature array:  \(featureArray)")
+        print("empty array: \(emptyArray)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -114,7 +135,6 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
         print (dataEntryArray)
         
     }
-    
 
     /*
     // MARK: - Navigation
