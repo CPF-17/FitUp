@@ -18,10 +18,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FIRApp.configure()
-
-        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
+//        FIRApp.configure()
+//
+//        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+//        GIDSignIn.sharedInstance().delegate = self
+//        return true
+//
+        
+        let defaults = UserDefaults.standard
+        if(defaults.bool(forKey: "HasUser")){
+            //segue to home
+            let storyboard = UIStoryboard(name: "Logged", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "HomeView")
+            window?.rootViewController = vc
+        } else{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyboard.instantiateViewController(withIdentifier: "WeightViewController")
+            window?.rootViewController = vc
+            
+        }
         return true
     }
 

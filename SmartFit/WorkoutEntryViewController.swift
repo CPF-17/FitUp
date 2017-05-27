@@ -130,7 +130,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
             print("persist array \(persist_array)")
             let defaults = UserDefaults.standard
             defaults.set(persist_array, forKey: "upperBodyArray")
-            defaults.synchronize()
+            //defaults.synchronize()
         }
         
         if(previousView == "Lower"){
@@ -139,7 +139,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
             print(persist_array)
             let defaults = UserDefaults.standard
             defaults.set(persist_array, forKey: "lowerBodyArray")
-            defaults.synchronize()
+            //defaults.synchronize()
         }
         
         if(previousView == "Cardio"){
@@ -149,7 +149,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
             
             let defaults = UserDefaults.standard
             defaults.set(persist_array, forKey: "upperBodyArray")
-            defaults.synchronize()
+            //defaults.synchronize()
         }
         
         
