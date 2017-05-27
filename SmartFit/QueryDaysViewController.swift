@@ -39,8 +39,13 @@ class QueryDaysViewController: UIViewController {
         let secondViewController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController") as! UINavigationController
 //        self.navigationController?.pushViewController(secondViewController, animated: true)
         
+       
+        let labelText = myTextField.text!
+        let labelVal = Int(labelText)!
+        
         let defaults = UserDefaults.standard
         defaults.set(true, forKey: "HasUser")
+        defaults.set(labelVal, forKey: "WorkoutDaysNum")
         
         
         

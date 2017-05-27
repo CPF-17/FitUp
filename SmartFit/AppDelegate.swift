@@ -28,9 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
         
-        
+        let empty = [Dictionary<String, String>]()
         
         let defaults = UserDefaults.standard
+        defaults.set(false, forKey: "HasUser")
+        defaults.set(empty, forKey: "upperBodyArray")
+        defaults.set(empty, forKey: "lowerBodyArray")
+        
         if(defaults.bool(forKey: "HasUser") == true){
             //segue to home
             let storyboard = UIStoryboard(name: "Logged", bundle: nil)
