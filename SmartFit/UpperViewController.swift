@@ -83,9 +83,7 @@ class UpperViewController: UIViewController {
 
     let storyBoard : UIStoryboard = UIStoryboard(name: "WorkoutEntry", bundle:nil)
         
-    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "WorkoutEntry") as! WorkoutEntryViewController
-        
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "WorkoutEntry") as! WorkoutEntryViewController
+    let secondViewController = storyBoard.instantiateViewController(withIdentifier: "WorkoutEntry") as! WorkoutEntryViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
         
     

@@ -21,24 +21,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="K3x-Ck-bz4">
+                                <rect key="frame" x="187" y="349" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.66980415579999997" blue="0.94023269409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIV-aT-z0J" customClass="Workout">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="736" id="UJJ-pN-oRa"/>
-                                    <constraint firstAttribute="width" constant="414" id="hFQ-Nm-yrv"/>
+                                    <constraint firstAttribute="height" constant="736" id="l2C-rp-rlW"/>
+                                    <constraint firstAttribute="width" constant="414" id="up6-kd-VT3"/>
                                 </constraints>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Kwe-Ys-js9">
+                                <rect key="frame" x="187" y="446" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.66980415579999997" blue="0.94023269409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wIV-aT-z0J" firstAttribute="top" secondItem="wPw-bp-nyp" secondAttribute="top" id="AHh-fE-aTE"/>
-                            <constraint firstItem="wIV-aT-z0J" firstAttribute="leading" secondItem="wPw-bp-nyp" secondAttribute="leading" id="hBa-yr-JwN"/>
-                            <constraint firstAttribute="trailing" secondItem="wIV-aT-z0J" secondAttribute="trailing" id="hjy-0g-83F"/>
-                            <constraint firstItem="lC6-4Z-4uu" firstAttribute="top" secondItem="wIV-aT-z0J" secondAttribute="bottom" id="pgj-pF-B9J"/>
+                            <constraint firstAttribute="trailing" secondItem="wIV-aT-z0J" secondAttribute="trailing" id="CNk-tt-UWY"/>
+                            <constraint firstItem="wIV-aT-z0J" firstAttribute="top" secondItem="wPw-bp-nyp" secondAttribute="top" id="bGx-hg-inn"/>
+                            <constraint firstItem="lC6-4Z-4uu" firstAttribute="top" secondItem="wIV-aT-z0J" secondAttribute="bottom" id="oyD-nn-cD0"/>
+                            <constraint firstItem="wIV-aT-z0J" firstAttribute="leading" secondItem="wPw-bp-nyp" secondAttribute="leading" id="ygo-lZ-8uo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xxt-yq-P7d"/>
                     <connections>
+                        <outlet property="featurePageControl" destination="Kwe-Ys-js9" id="W2X-fS-tYc"/>
                         <outlet property="featureScrollView" destination="wIV-aT-z0J" id="k0a-5E-qP5"/>
                     </connections>
                 </viewController>

@@ -14,6 +14,7 @@ class WorkoutEntry: UIView {
     
      @IBOutlet weak var units: UILabel!
     
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var entryField: UITextField!
     /*
     // Only override draw() if you perform custom drawing.
