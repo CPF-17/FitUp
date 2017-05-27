@@ -22,6 +22,17 @@ class PowerMonViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let defaults = UserDefaults.standard
+        let existing = defaults.bool(forKey: "HasUser")
+        print("\(existing)")
+        
+        
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationItem.backBarButtonItem?.title = ""
         // Do any additional setup after loading the view.
 //      lowBarLabel.text = user.lowBar
 //      benchLabel.text = user.benchPress
@@ -38,6 +49,11 @@ class PowerMonViewController: UIViewController {
     }
   
   
+    @IBAction func onMondayTapped(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "MondayDetailedView") as! PowerMonViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
     
 
     /*

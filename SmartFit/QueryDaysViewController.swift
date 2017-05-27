@@ -33,11 +33,18 @@ class QueryDaysViewController: UIViewController {
     //performSegue(withIdentifier: "querySegue", sender: nil)
         let storyBoard : UIStoryboard = UIStoryboard(name: "Logged", bundle:nil)
         
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! PowerMonViewController
-        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+        
+        //let secondViewController = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! PowerMonViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController") as! UINavigationController
+//        self.navigationController?.pushViewController(secondViewController, animated: true)
         
         let defaults = UserDefaults.standard
         defaults.set(true, forKey: "HasUser")
+        
+        
+        
+        self.present(secondViewController, animated: true, completion: nil)
         
         
     }

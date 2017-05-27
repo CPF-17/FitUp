@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lw8-KF-524">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ws4-5J-vXp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,7 +35,7 @@
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="wul-sB-RmV" kind="showDetail" id="nZA-z2-Pdd"/>
+                                                    <action selector="onMondayTapped:" destination="lw8-KF-524" eventType="touchUpInside" id="TuE-uY-idN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-y3-bOJ">
@@ -139,15 +139,16 @@
                             <constraint firstItem="POn-lT-gUp" firstAttribute="top" secondItem="B9X-Su-Kee" secondAttribute="top" id="xUC-WK-Vqa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VzE-wa-vVC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4x-b2-Ff7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6441" y="1437"/>
+            <point key="canvasLocation" x="7380" y="1436.1319340329835"/>
         </scene>
         <!--Power Mon View Controller-->
         <scene sceneID="lDV-Vg-1hZ">
             <objects>
-                <viewController id="wul-sB-RmV" customClass="PowerMonViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MondayDetailedView" id="wul-sB-RmV" customClass="PowerMonViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zpc-GN-pgs"/>
                         <viewControllerLayoutGuide type="bottom" id="fbU-jJ-6pj"/>
@@ -345,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPC-VA-9tI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7554" y="1367"/>
+            <point key="canvasLocation" x="8492" y="1366.8665667166417"/>
         </scene>
         <!--Power Sat View Controller-->
         <scene sceneID="UDN-ih-GeT">
@@ -475,6 +476,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gB4-cU-n8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7921" y="2188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WKK-su-U29">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ws4-5J-vXp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HVL-If-RA3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lw8-KF-524" kind="relationship" relationship="rootViewController" id="cLN-Fc-NYd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfA-4b-USw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6440.8000000000002" y="1436.1319340329835"/>
         </scene>
     </scenes>
     <resources>

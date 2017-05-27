@@ -25,19 +25,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 //        return true
 //
         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        
+        
+        
         let defaults = UserDefaults.standard
-        if(defaults.bool(forKey: "HasUser")){
+        if(defaults.bool(forKey: "HasUser") == true){
             //segue to home
             let storyboard = UIStoryboard(name: "Logged", bundle: nil)
+            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+            
             let vc = storyboard.instantiateViewController(withIdentifier: "HomeView")
-            window?.rootViewController = vc
+            
+            navigationController.viewControllers = [vc]
+  
+            self.window?.rootViewController = navigationController
+            
         } else{
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
             
             let vc = storyboard.instantiateViewController(withIdentifier: "WeightViewController")
-            window?.rootViewController = vc
+            
+            navigationController.viewControllers = [vc]
+            
+            self.window?.rootViewController = navigationController
+        
             
         }
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 
