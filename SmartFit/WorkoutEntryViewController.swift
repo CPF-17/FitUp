@@ -11,6 +11,7 @@ import UIKit
 class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
     //empty array for resetting
     let emptyArray = [Dictionary<String, String>]()
+    var previousView: String!
     @IBOutlet weak var featureScrollView: UIScrollView!
     
     
@@ -57,23 +58,6 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        print("disappearing")
-        super.viewWillDisappear(animated)
-        
-        if (self.isMovingFromParentViewController){
-            print("view is dismissed")
-            UpperViewController.comingBackStruct.comingBack = true
-            //featureArray = emptyArray
-        }
-        
-//        if(self.isBeingDismissed == true){
-//            
-//        }
-        
-        print("feature array:  \(featureArray)")
-        print("empty array: \(emptyArray)")
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -131,6 +115,31 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
             }
 
         }
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        if(previousView == "Upper"){
+            if(user.lowerBody == true){
+                let secondViewController = storyBoard.instantiateViewController(withIdentifier: "LowerBody") as! PowerLowerViewController
+                self.navigationController?.pushViewController(secondViewController, animated: true)
+            } else{
+                let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+                self.navigationController?.pushViewController(secondViewController, animated: true)
+            }
+            
+        }
+        
+        if(previousView == "Lower"){
+            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+        }
+        
+        
+        
+        //TODO: put the data somewhere (UserDefaults?)
+        
+        //segue to the
         
         print (dataEntryArray)
         

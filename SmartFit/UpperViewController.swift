@@ -98,12 +98,12 @@ class UpperViewController: UIViewController {
     }
 */
     if(armsSwitch.isOn == true){
-        workoutsArray.append(["name": "Bicep Curls", "units": "reps"])
+        workoutsArray.append(["name": "Bicep Curls", "units": "lbs"])
         workoutsArray.append(["name": "Push ups", "units": "reps"])
             
     }
     if(absSwitch.isOn == true){
-        workoutsArray.append(["name": "Ab Machine", "units": "reps"])
+        workoutsArray.append(["name": "Ab Machine", "units": "lbs"])
         workoutsArray.append(["name": "Sit Ups", "units": "reps"])
     }
         
@@ -111,13 +111,25 @@ class UpperViewController: UIViewController {
         workoutsArray.append(["name": "Overhead Press", "units": "lbs"])
     }
         
-    if(user.isPowerlifting == true){
+    if(chestSwitch.isOn == true){
         workoutsArray.append(["name": "Bench Press", "units": "lbs"])
     }
         
-    if(user.isBodybuilding == true){
+    if(backSwitch.isOn == true){
         workoutsArray.append(["name": "Bentover Rows", "units": "lbs"])
+        workoutsArray.append(["name": "Lat Pulldown", "units": "lbs"])
     }
+        
+    if(user.isPowerlifting == true){
+        workoutsArray.append(["name": "Close Grip Bench", "units": "lbs"])
+        workoutsArray.append(["name": "Wide Grip Bench", "units": "lbs"])
+    }
+        
+    if(user.isBodybuilding == true || user.isFitness == true){
+        workoutsArray.append(["name": "Decline Bench", "units": "lbs"])
+        workoutsArray.append(["name": "Incline Bench", "units": "lbs"])
+    }
+        
         
     
 
@@ -127,6 +139,7 @@ class UpperViewController: UIViewController {
         self.navigationController?.pushViewController(secondViewController, animated: true)
     
     secondViewController.featureArray = workoutsArray
+    secondViewController.previousView = "Upper"
     workoutsArray = emptyArray
     
         

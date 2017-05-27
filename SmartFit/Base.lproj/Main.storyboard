@@ -898,7 +898,7 @@
         <!--Query Days View Controller-->
         <scene sceneID="wuT-Hg-YUt">
             <objects>
-                <viewController id="og8-w3-J7l" customClass="QueryDaysViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QueryDays" id="og8-w3-J7l" customClass="QueryDaysViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QL5-ln-7PI"/>
                         <viewControllerLayoutGuide type="bottom" id="OKv-fK-vjS"/>
@@ -1921,7 +1921,7 @@
         <!--Power Lower View Controller-->
         <scene sceneID="SGK-Vu-oOI">
             <objects>
-                <viewController id="N73-Tp-eTS" customClass="PowerLowerViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LowerBody" id="N73-Tp-eTS" customClass="PowerLowerViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lp2-LJ-BMf"/>
                         <viewControllerLayoutGuide type="bottom" id="eht-fL-R6v"/>
@@ -2050,9 +2050,8 @@
                                     <constraint firstAttribute="width" constant="141" id="3R8-Gy-K5W"/>
                                     <constraint firstAttribute="height" constant="63" id="pkv-tO-ecX"/>
                                 </constraints>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="onSubmitButto:" destination="N73-Tp-eTS" eventType="touchUpInside" id="0jh-Wm-piY"/>
                                 </connections>
@@ -2114,7 +2113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93u-UN-6Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697.1014492753625" y="2884.239130434783"/>
+            <point key="canvasLocation" x="1781" y="2861"/>
         </scene>
         <!--Power Leg View Controller-->
         <scene sceneID="FoF-HY-wIv">
@@ -2894,7 +2893,7 @@
         <image name="upperbody" width="650" height="412"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aoh-mc-E1e"/>
+        <segue reference="XNL-sJ-VRG"/>
         <segue reference="0rF-zQ-ZEl"/>
     </inferredMetricsTieBreakers>
 </document>
