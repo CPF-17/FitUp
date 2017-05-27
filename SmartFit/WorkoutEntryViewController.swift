@@ -138,6 +138,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
             self.navigationController?.pushViewController(secondViewController, animated: true)
             print(persist_array)
             let defaults = UserDefaults.standard
+          
             defaults.set(persist_array, forKey: "lowerBodyArray")
             //defaults.synchronize()
         }
