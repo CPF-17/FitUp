@@ -10,6 +10,8 @@ import UIKit
 
 class DaysTableViewController: UITableViewController {
 
+  @IBOutlet var sTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

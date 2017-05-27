@@ -28,6 +28,8 @@
 		EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */; };
 		EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */; };
 		EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */; };
+		EFA887D91ED9D9E700DFB82E /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA887D81ED9D9E700DFB82E /* DaysViewController.swift */; };
+		EFA887DC1ED9DEC500DFB82E /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA887DB1ED9DEC500DFB82E /* DayTableViewCell.swift */; };
 		EFD68C4C1ECC7B0C00AFF743 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */; };
 		EFD68C4E1ECC7E5100AFF743 /* PowerMonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */; };
 		EFD68C501ECC829C00AFF743 /* PowerLowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */; };
@@ -59,6 +61,8 @@
 		EF6AA8AB1EC871AD005170A6 /* QueryTypeRoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryTypeRoutineViewController.swift; sourceTree = "<group>"; };
 		EF6AA8AD1EC87278005170A6 /* QueryDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryDaysViewController.swift; sourceTree = "<group>"; };
 		EF9B43561EAF0FD700CFB399 /* UpperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperViewController.swift; sourceTree = "<group>"; };
+		EFA887D81ED9D9E700DFB82E /* DaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
+		EFA887DB1ED9DEC500DFB82E /* DayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
 		EFD68C4B1ECC7B0C00AFF743 /* DaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerMonViewController.swift; sourceTree = "<group>"; };
 		EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerLowerViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				EFD68C4D1ECC7E5100AFF743 /* PowerMonViewController.swift */,
 				EFD68C4F1ECC829C00AFF743 /* PowerLowerViewController.swift */,
 				4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */,
+				EFA887D81ED9D9E700DFB82E /* DaysViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		67C745AA1E9F092000B60013 /* SmartFit */ = {
 			isa = PBXGroup;
 			children = (
+				EFA887DA1ED9DE9B00DFB82E /* Cells */,
 				4C3267D71ED261700000FC8F /* Extensions */,
 				EF5080841ECC343A0013FACF /* Model */,
 				4CE0D5F31EA580AF0082BCF4 /* ViewControllers */,
@@ -156,6 +162,14 @@
 				67AE46CC1EB8431D00021317 /* User.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EFA887DA1ED9DE9B00DFB82E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFA887DB1ED9DEC500DFB82E /* DayTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		FF779D836A340016514A2E95 /* Frameworks */ = {
@@ -298,11 +312,13 @@
 				EF6AA8AE1EC87278005170A6 /* QueryDaysViewController.swift in Sources */,
 				EF42D6BE1EC409430026C9AB /* RoutineUpperViewController.swift in Sources */,
 				EF3A21791EB19C3C007FA939 /* UpperBodySubmitViewController.swift in Sources */,
+				EFA887D91ED9D9E700DFB82E /* DaysViewController.swift in Sources */,
 				EFD68C501ECC829C00AFF743 /* PowerLowerViewController.swift in Sources */,
 				EF3A21731EB18133007FA939 /* WeightViewController.swift in Sources */,
 				EF6AA8AC1EC871AD005170A6 /* QueryTypeRoutineViewController.swift in Sources */,
 				4C3267DD1ED2627A0000FC8F /* FadeExtension.swift in Sources */,
 				67C745AC1E9F092000B60013 /* AppDelegate.swift in Sources */,
+				EFA887DC1ED9DEC500DFB82E /* DayTableViewCell.swift in Sources */,
 				EF9B43571EAF0FD700CFB399 /* UpperViewController.swift in Sources */,
 				4C3267F21ED80F890000FC8F /* WorkoutEntryViewController.swift in Sources */,
 				67AE46CD1EB8431D00021317 /* User.swift in Sources */,
