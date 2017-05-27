@@ -41,7 +41,7 @@
 		4C3267ED1ED80C4E0000FC8F /* Entry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Entry.xib; sourceTree = "<group>"; };
 		4C3267F11ED80F890000FC8F /* WorkoutEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutEntryViewController.swift; sourceTree = "<group>"; };
 		4C3267F31ED813870000FC8F /* WorkoutEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutEntry.swift; sourceTree = "<group>"; };
-		4C3267F51ED998E10000FC8F /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrefViewController.swift; path = ../../../.Trash/PrefViewController.swift; sourceTree = "<group>"; };
+		4C3267F51ED998E10000FC8F /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		67AE46CC1EB8431D00021317 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		67C745A81E9F092000B60013 /* SmartFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C745AB1E9F092000B60013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
