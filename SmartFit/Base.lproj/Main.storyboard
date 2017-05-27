@@ -38,7 +38,7 @@
         <!--Weight View Controller-->
         <scene sceneID="z1d-ed-qOq">
             <objects>
-                <viewController id="N7a-9G-qg2" customClass="WeightViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeightViewController" id="N7a-9G-qg2" customClass="WeightViewController" customModule="SmartFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KhF-yy-6MP"/>
                         <viewControllerLayoutGuide type="bottom" id="wcp-YH-Zwo"/>

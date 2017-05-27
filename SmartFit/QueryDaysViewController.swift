@@ -13,13 +13,13 @@ class QueryDaysViewController: UIViewController {
     @IBOutlet weak var myTextField: UITextField!
   
     @IBOutlet weak var submitButton: UIButton!
-  var days: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         submitButton.layer.cornerRadius = 5
         
         myTextField.becomeFirstResponder()
-        days = myTextField.text
+        
         // Do any additional setup after loading the view.
     }
 
@@ -35,6 +35,10 @@ class QueryDaysViewController: UIViewController {
         
         let secondViewController = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! PowerMonViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "HasUser")
+        
         
     }
   }
