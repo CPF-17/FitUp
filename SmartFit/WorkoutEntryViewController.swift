@@ -104,12 +104,15 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
     func submit(sender: UIButton){
         
         
-        for subview in featureScrollView.subviews as [UIView] {
+        for subview in featureScrollView.subviews as! [WorkoutEntry] {
             print("hi")
-            if let textField = subview as? UILabel {
-                print([textField])
-            }
+            print("\(subview.entryField.text)")
+//            if let textField = subview as? UILabel {
+//                print([textField])
+//            }
         }
+    
+      
        
         //print (dataEntryArray)
 //        var persist_array = [Dictionary<String,String>]()
