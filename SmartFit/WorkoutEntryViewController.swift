@@ -19,15 +19,17 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var featurePageControl: UIPageControl!
 
     
-    var dataEntryArray = [Int]()
+    //var dataEntryArray = [String]()
     
     var featureArray = [Dictionary<String,String>]()
-    
+    var dataEntryArray = [String](repeating: "0", count: 5)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataEntryArray = [Int] (repeating: 0, count: featureArray.count)
+        
+        //dataEntryArray = [String] (repeating: "0", count: featureArray.count)
+        
         
         featurePageControl.numberOfPages = featureArray.count
         featurePageControl.isEnabled = true
@@ -69,6 +71,8 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
                 
                 featureView.name.text = feature["name"]
                 featureView.units.text = feature["units"]
+                featureView.entryField.text = "100"
+                
                 
                 featureScrollView.addSubview(featureView)
                 featureView.frame.size.width = self.view.bounds.size.width
@@ -99,43 +103,70 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
     
     func submit(sender: UIButton){
         
-        for (index, feature) in featureArray.enumerated(){
-            if let featureView = Bundle.main.loadNibNamed("Entry", owner: self, options: nil)?.first as? WorkoutEntry {
-                
-                if featureView.entryField.text != ""{
-                    
-                    dataEntryArray[index] = featureView.entryField.text as! Int;
-                } else {
-                    dataEntryArray[index] = 0
-                }
- 
-            }
-
-        }
         
+        for subview in featureScrollView.subviews as [UIView] {
+            print("hi")
+            if let textField = subview as? UILabel {
+                print([textField])
+            }
+        }
+       
+        //print (dataEntryArray)
+//        var persist_array = [Dictionary<String,String>]()
+//        for (index, feature) in featureArray.enumerated(){
+//            if let featureView = Bundle.main.loadNibNamed("Entry", owner: self, options: nil)?.first as? WorkoutEntry {
+//                
+//                print("\(featureView.entryField.text)")
+//                persist_array.append(["name": feature["name"]!, "mag":featureView.entryField.text!, "units": feature["units"]! ])
+//                //dataEntryArray
+////                if featureView.entryField.text != ""{
+////                    
+////                    persist_array.append(["name": feature["name"]!, "mag":featureView.entryField.text!, "units": feature["units"]! ])
+////                } else {
+////                     persist_array.append(["name": feature["name"]!, "mag":"0", "units": feature["units"]! ])
+////                }
+// 
+//            }
+//
+//        }
+//        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        if(previousView == "Upper"){
-            if(user.lowerBody == true){
+//        if(previousView == "Upper"){
+//            if(user.lowerBody == true){
                 let secondViewController = storyBoard.instantiateViewController(withIdentifier: "LowerBody") as! PowerLowerViewController
                 self.navigationController?.pushViewController(secondViewController, animated: true)
-            } else{
-                let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
-                self.navigationController?.pushViewController(secondViewController, animated: true)
-            }
-            
-        }
-        
-        if(previousView == "Lower"){
-            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-        
-        }
-        
-        if(previousView == "Cardio"){
-            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-        }
+
+//            } else{
+//                let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+//                self.navigationController?.pushViewController(secondViewController, animated: true)
+//                
+//            }
+//            print("persist array \(persist_array)")
+//            print("data array \(dataEntryArray)")
+//            let defaults = UserDefaults.standard
+//            defaults.set(persist_array, forKey: "upperBodyArray")
+//            defaults.synchronize()
+//        }
+//        
+//        if(previousView == "Lower"){
+//            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
+//            print(persist_array)
+//            let defaults = UserDefaults.standard
+//            defaults.set(persist_array, forKey: "lowerBodyArray")
+//            defaults.synchronize()
+//        }
+//        
+//        if(previousView == "Cardio"){
+//            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
+//            print(persist_array)
+//            
+//            let defaults = UserDefaults.standard
+//            defaults.set(persist_array, forKey: "upperBodyArray")
+//            defaults.synchronize()
+//        }
         
         
         
@@ -143,7 +174,11 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
         
         //segue to the
         
-        print (dataEntryArray)
+        
+        
+
+        
+        //print (dataEntryArray)
         
     }
 

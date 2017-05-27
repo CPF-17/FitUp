@@ -22,8 +22,8 @@ class UpperViewController: UIViewController {
   @IBOutlet weak var chestSwitch: UISwitch!
     static var comingBack = false;
     
-    var workoutsArray = [Dictionary<String, String, String>] ()
-    let emptyArray = [Dictionary<String, String, String>]()
+    var workoutsArray = [Dictionary<String, String>] ()
+    let emptyArray = [Dictionary<String, String>]()
     
     
     
@@ -76,31 +76,31 @@ class UpperViewController: UIViewController {
             
     }
     if(absSwitch.isOn == true){
-        workoutsArray.append(["name": "Ab Machine", "units": "lbs"])
-        workoutsArray.append(["name": "Sit Ups", "units": "reps"])
+        workoutsArray.append(["name": "Ab Machine", "mag": "", "units": "lbs"])
+        workoutsArray.append(["name": "Sit Ups", "mag": "", "units": "reps"])
     }
         
     if(shoulderSwitch.isOn == true){
-        workoutsArray.append(["name": "Overhead Press", "units": "lbs"])
+        workoutsArray.append(["name": "Overhead Press", "mag": "", "units": "lbs"])
     }
         
     if(chestSwitch.isOn == true){
-        workoutsArray.append(["name": "Bench Press", "units": "lbs"])
+        workoutsArray.append(["name": "Bench Press", "mag": "", "units": "lbs"])
     }
         
     if(backSwitch.isOn == true){
-        workoutsArray.append(["name": "Bentover Rows", "units": "lbs"])
-        workoutsArray.append(["name": "Lat Pulldown", "units": "lbs"])
+        workoutsArray.append(["name": "Bentover Rows", "mag": "", "units": "lbs"])
+        workoutsArray.append(["name": "Lat Pulldown", "mag": "", "units": "lbs"])
     }
         
     if(user.isPowerlifting == true){
-        workoutsArray.append(["name": "Close Grip Bench", "units": "lbs"])
-        workoutsArray.append(["name": "Wide Grip Bench", "units": "lbs"])
+        workoutsArray.append(["name": "Close Grip Bench", "mag": "", "units": "lbs"])
+        workoutsArray.append(["name": "Wide Grip Bench", "mag": "", "units": "lbs"])
     }
         
     if(user.isBodybuilding == true || user.isFitness == true){
-        workoutsArray.append(["name": "Decline Bench", "units": "lbs"])
-        workoutsArray.append(["name": "Incline Bench", "units": "lbs"])
+        workoutsArray.append(["name": "Decline Bench", "mag": "", "units": "lbs"])
+        workoutsArray.append(["name": "Incline Bench", "mag": "", "units": "lbs"])
     }
         
         
