@@ -22,7 +22,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
     //var dataEntryArray = [String]()
     
     var featureArray = [Dictionary<String,String>]()
-    var dataEntryArray = [String](repeating: "0", count: 5)
+//    var dataEntryArray = [String](repeating: "0", count: 5)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,11 +50,6 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
 
         
         loadFeatures()
-        
-        
-
-
-        // Do any additional setup after loading the view.
     }
     
 
@@ -71,7 +66,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
                 
                 featureView.name.text = feature["name"]
                 featureView.units.text = feature["units"]
-                featureView.entryField.text = "100"
+//                featureView.entryField.text = "100"
                 
                 
                 featureScrollView.addSubview(featureView)
@@ -103,73 +98,59 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
     
     func submit(sender: UIButton){
         
+        //array to be persisted
+        var persist_array = [Dictionary<String, String>]()
+        
         
         for subview in featureScrollView.subviews as! [WorkoutEntry] {
-            print("hi")
-            print("\(subview.entryField.text)")
-//            if let textField = subview as? UILabel {
-//                print([textField])
-//            }
+            print("\(subview.entryField.text!)")
+            var magnitude = "0"
+            if subview.entryField.text! != "" {
+                magnitude = subview.entryField.text!
+            }
+        
+        
+            persist_array.append(["name": subview.name.text!, "mag": magnitude, "units": subview.units.text! ])
         }
     
       
-       
-        //print (dataEntryArray)
-//        var persist_array = [Dictionary<String,String>]()
-//        for (index, feature) in featureArray.enumerated(){
-//            if let featureView = Bundle.main.loadNibNamed("Entry", owner: self, options: nil)?.first as? WorkoutEntry {
-//                
-//                print("\(featureView.entryField.text)")
-//                persist_array.append(["name": feature["name"]!, "mag":featureView.entryField.text!, "units": feature["units"]! ])
-//                //dataEntryArray
-////                if featureView.entryField.text != ""{
-////                    
-////                    persist_array.append(["name": feature["name"]!, "mag":featureView.entryField.text!, "units": feature["units"]! ])
-////                } else {
-////                     persist_array.append(["name": feature["name"]!, "mag":"0", "units": feature["units"]! ])
-////                }
-// 
-//            }
-//
-//        }
-//        
+        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-//        if(previousView == "Upper"){
-//            if(user.lowerBody == true){
+        if(previousView == "Upper"){
+            if(user.lowerBody == true){
                 let secondViewController = storyBoard.instantiateViewController(withIdentifier: "LowerBody") as! PowerLowerViewController
                 self.navigationController?.pushViewController(secondViewController, animated: true)
 
-//            } else{
-//                let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
-//                self.navigationController?.pushViewController(secondViewController, animated: true)
-//                
-//            }
-//            print("persist array \(persist_array)")
-//            print("data array \(dataEntryArray)")
-//            let defaults = UserDefaults.standard
-//            defaults.set(persist_array, forKey: "upperBodyArray")
-//            defaults.synchronize()
-//        }
-//        
-//        if(previousView == "Lower"){
-//            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
-//            print(persist_array)
-//            let defaults = UserDefaults.standard
-//            defaults.set(persist_array, forKey: "lowerBodyArray")
-//            defaults.synchronize()
-//        }
-//        
-//        if(previousView == "Cardio"){
-//            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
-//            print(persist_array)
-//            
-//            let defaults = UserDefaults.standard
-//            defaults.set(persist_array, forKey: "upperBodyArray")
-//            defaults.synchronize()
-//        }
+            } else{
+                let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+                self.navigationController?.pushViewController(secondViewController, animated: true)
+                
+            }
+            print("persist array \(persist_array)")
+            let defaults = UserDefaults.standard
+            defaults.set(persist_array, forKey: "upperBodyArray")
+            defaults.synchronize()
+        }
+        
+        if(previousView == "Lower"){
+            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+            print(persist_array)
+            let defaults = UserDefaults.standard
+            defaults.set(persist_array, forKey: "lowerBodyArray")
+            defaults.synchronize()
+        }
+        
+        if(previousView == "Cardio"){
+            let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QueryDays") as! QueryDaysViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+            print(persist_array)
+            
+            let defaults = UserDefaults.standard
+            defaults.set(persist_array, forKey: "upperBodyArray")
+            defaults.synchronize()
+        }
         
         
         
