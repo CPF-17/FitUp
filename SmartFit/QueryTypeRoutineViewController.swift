@@ -44,7 +44,7 @@ class QueryTypeRoutineViewController: UIViewController, UIPickerViewDelegate, UI
 //      pickerLabel?.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
     }
     let titleData = picks[row]
-    let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Menlo", size: 26.0)!,NSForegroundColorAttributeName:UIColor.white])
+    let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.font:UIFont(name: "Menlo", size: 26.0)!,NSAttributedStringKey.foregroundColor:UIColor.white])
     pickerLabel!.attributedText = myTitle
     pickerLabel!.textAlignment = .center
     return pickerLabel!

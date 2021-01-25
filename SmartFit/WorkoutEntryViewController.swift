@@ -96,7 +96,7 @@ class WorkoutEntryViewController: UIViewController, UIScrollViewDelegate {
        
     }
     
-    func submit(sender: UIButton){
+    @objc func submit(sender: UIButton){
         
         //array to be persisted
         var persist_array = [Dictionary<String, String>]()
